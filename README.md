@@ -1,75 +1,63 @@
-# React + TypeScript + Vite
+# feet5145
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web personal de **feet5145**, escritor de historias de fetiche de pies con elementos de hipnosis suave.
 
-Currently, two official plugins are available:
+Este proyecto es de **código abierto**. El objetivo es crear un espacio propio, libre de las restricciones de plataformas como Wattpad, donde poder compartir novedades y enlaces de forma cómoda.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Características
 
-## React Compiler
+- Diseño cálido y acogedor inspirado en la atmósfera de "escapada del mundo real"
+- Sección de historias
+- Fichas de personajes ("Conoce a los personajes")
+- Novedades / actualizaciones
+- Página de enlaces libres (Wattpad, redes, etc.)
+- Totalmente responsive
+- Construido con React + Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías
 
-## Expanding the ESLint configuration
+- [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Instalación y uso
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+# Clonar el repositorio
+git clone https://github.com/TU_USUARIO/feet5145-web.git
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Entrar en la carpeta
+cd feet5145-web
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Instalar dependencias
+npm install
 
+# Ejecutar en modo desarrollo
+npm run dev
+
+# Construir para producción
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### Aviso sobre Inteligencia Artificial
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Partes de este proyecto han sido generadas o asistidas por Inteligencia Artificial:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Imágenes: Las portadas, fondos y mockups visuales han sido generados con IA (principalmente Grok Imagine).
+- Código: Algunas estructuras, componentes y textos de ejemplo han sido creados o refinados con ayuda de IA (Grok, ChatGPT y Claude).
+- Diseño: La dirección artística y la estructura general del sitio también se desarrollaron con asistencia de IA.
 
-```
+**Las historias publicadas en el sitio son obra original del autor.**
+
+### Contribuciones
+Las contribuciones son bienvenidas. Si quieres mejorar el código, corregir errores o añadir funcionalidades:
+
+1. Haz un fork del repositorio
+2. Crea una rama (git checkout -b feature/nueva-funcionalidad)
+3. Realiza tus cambios
+4. Abre un Pull Request
+
+### Licencia
+Este proyecto está bajo la licencia **MIT.**
+
