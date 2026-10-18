@@ -1,6 +1,7 @@
 import Header from "./components/layout/Header"
 import Inicio from "./components/sections/Inicio"
 import Historias from "./components/sections/Historias"
+import Personajes from "./components/sections/Personajes"
 
 function App() {
 
@@ -13,9 +14,7 @@ function App() {
 
         <Historias />
 
-        <section id="personajes">
-          {/* Tus personajes */}
-        </section>
+        <Personajes />
 
         <section id="novedades">
           {/* Tus novedades */}
