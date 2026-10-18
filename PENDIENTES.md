@@ -3,7 +3,7 @@
 ## Imágenes
 - [ ] Fondo de Inicio: `public/fondos/inicio.jpg`
 - [x] Portadas de historias en `public/portadas/` (`<id>.jpg`, ver `src/data/historias.ts`)
-- [ ] Fotos de personajes en `public/personajes/` (`Pedalina.png`, `Cristina.png`, `Marina.jpg`, `El que elige.jpg`, …)
+- [ ] Fotos de personajes en `public/personajes/` (`Pedalina.png`, `Cristina.png`, `Marina.jpg`, `El que elige.jpg`, `Clara.jpg`, `Tomás.jpg`, `Lucía.jpg`, `Maya.jpg`, `Carmen.jpg`, `Artenón.jpg`, `Chronos.webp`, …)
 
 ## Historias
 - [x] Completar descripción y etiquetas de todas las historias
@@ -11,7 +11,7 @@
 - [x] Página con todas las historias (`/historias`)
 
 ## Personajes
-- [ ] Fichas del resto de personajes (Artenón, Carolina, Lucía, Silvana, …)
+- [ ] Fichas del resto de personajes (Carolina, la Lucía de «Los deseos de mis pies», Silvana, …)
 - [x] Página con todos los personajes (`/personajes`) y fichas completas (`/personajes/<id>`)
 
 ## Novedades

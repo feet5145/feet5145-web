@@ -1,7 +1,8 @@
 import type { ReactNode } from "react";
 import { Link, useParams } from "react-router";
 import ListaApariciones from "../components/ui/ListaApariciones";
-import { buscarPersonaje, buscarPersonajePorNombre } from "../data/personajes";
+import TextoFicha from "../components/ui/TextoFicha";
+import { buscarPersonaje } from "../data/personajes";
 import { useTituloPagina } from "../hooks/useTituloPagina";
 import PaginaNoEncontrada from "./PaginaNoEncontrada";
 
@@ -70,45 +71,42 @@ function PaginaPersonaje() {
                                     <dt className="text-sm font-medium uppercase tracking-wider text-[#d9ad63]">
                                         {dato.etiqueta}
                                     </dt>
-                                    <dd className="-mt-3 sm:mt-0">{dato.valor}</dd>
+                                    <dd className="-mt-3 sm:mt-0">
+                                        <TextoFicha texto={dato.valor} />
+                                    </dd>
                                 </div>
                             ))}
                         </dl>
                     </Apartado>
 
-                    <Apartado titulo="Personalidad">
-                        {personaje.personalidad.map((parrafo) => (
-                            <p key={parrafo}>{parrafo}</p>
-                        ))}
-                    </Apartado>
+                    {personaje.personalidad.length > 0 && (
+                        <Apartado titulo="Personalidad">
+                            {personaje.personalidad.map((parrafo) => (
+                                <p key={parrafo}>
+                                    <TextoFicha texto={parrafo} />
+                                </p>
+                            ))}
+                        </Apartado>
+                    )}
 
-                    <Apartado titulo="Rol en la historia">
-                        {personaje.rol.map((parrafo) => (
-                            <p key={parrafo}>{parrafo}</p>
-                        ))}
-                    </Apartado>
+                    {personaje.rol && personaje.rol.length > 0 && (
+                        <Apartado titulo="Rol en la historia">
+                            {personaje.rol.map((parrafo) => (
+                                <p key={parrafo}>
+                                    <TextoFicha texto={parrafo} />
+                                </p>
+                            ))}
+                        </Apartado>
+                    )}
 
                     {personaje.relaciones.length > 0 && (
                         <Apartado titulo="Relaciones">
-                            <ul className="space-y-3">
-                                {personaje.relaciones.map((relacion) => {
-                                    const otro = buscarPersonajePorNombre(relacion.personaje);
-                                    return (
-                                        <li key={relacion.personaje}>
-                                            {otro ? (
-                                                <Link
-                                                    to={`/personajes/${otro.id}`}
-                                                    className="font-semibold text-[#edc577] underline-offset-4 hover:underline"
-                                                >
-                                                    {relacion.personaje}
-                                                </Link>
-                                            ) : (
-                                                <span className="font-semibold text-[#f5eee2]">{relacion.personaje}</span>
-                                            )}
-                                            : {relacion.descripcion}
-                                        </li>
-                                    );
-                                })}
+                            <ul className="list-disc space-y-3 pl-5 marker:text-[#d9ad63]">
+                                {personaje.relaciones.map((relacion) => (
+                                    <li key={relacion}>
+                                        <TextoFicha texto={relacion} />
+                                    </li>
+                                ))}
                             </ul>
                         </Apartado>
                     )}
@@ -117,7 +115,9 @@ function PaginaPersonaje() {
                         <Apartado titulo="Notas y evolución">
                             <ul className="list-disc space-y-2 pl-5 marker:text-[#d9ad63]">
                                 {personaje.notas.map((nota) => (
-                                    <li key={nota}>{nota}</li>
+                                    <li key={nota}>
+                                        <TextoFicha texto={nota} />
+                                    </li>
                                 ))}
                             </ul>
                         </Apartado>
