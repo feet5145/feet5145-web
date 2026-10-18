@@ -22,6 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+CLAUDE.md
 
 # Plantilla visual de cómo me gustaría el diseño
 mi_wes.jpg

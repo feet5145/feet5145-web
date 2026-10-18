@@ -1,4 +1,5 @@
 import Header from "./components/layout/Header"
+import Inicio from "./components/sections/Inicio"
 
 function App() {
 
@@ -7,9 +8,7 @@ function App() {
       <Header></Header>
 
       <main>
-        <section id="inicio">
-          {/* Contenido de inicio */}
-        </section>
+        <Inicio />
 
         <section id="historias">
           {/* Tus historias */}

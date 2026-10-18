@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+    --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #100b07;
+    color: #f5eee2;
+}
+
+/* Compensa la cabecera fija al saltar a una sección */
+section[id] {
+    scroll-margin-top: 80px;
+}
