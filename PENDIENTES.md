@@ -15,7 +15,10 @@
 - [ ] Fichas del resto de personajes (Artenón, Carolina, Lucía, Silvana, …)
 - [ ] Página con todos los personajes y sus fichas completas (necesita React Router)
 
+## Novedades
+- [ ] Sustituir las novedades de ejemplo por reales (`src/data/novedades.ts`)
+- [ ] Página con todas las novedades (necesita React Router)
+
 ## Secciones por hacer
-- [ ] Novedades
 - [ ] Enlaces
 - [ ] Pie de página y retoques finales

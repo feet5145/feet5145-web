@@ -2,6 +2,7 @@ import Header from "./components/layout/Header"
 import Inicio from "./components/sections/Inicio"
 import Historias from "./components/sections/Historias"
 import Personajes from "./components/sections/Personajes"
+import Novedades from "./components/sections/Novedades"
 
 function App() {
 
@@ -16,9 +17,7 @@ function App() {
 
         <Personajes />
 
-        <section id="novedades">
-          {/* Tus novedades */}
-        </section>
+        <Novedades />
 
         <section id="enlaces">
           {/* Tus enlaces */}
