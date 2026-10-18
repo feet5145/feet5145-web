@@ -1,4 +1,4 @@
-export type Icono = "libro" | "chat" | "candado";
+export type Icono = "libro" | "chat" | "candado" | "descarga";
 
 type EnlaceBase = {
     nombre: string;
@@ -24,6 +24,14 @@ export const enlaces: Enlace[] = [
         icono: "libro",
         url: "",
         destacado: true,
+    },
+    {
+        tipo: "url",
+        nombre: "Descargar historias",
+        descripcion:
+            "Todas las historias terminadas, listas para descargar. Mi copia de seguridad por si las plataformas fallan.",
+        icono: "descarga",
+        url: "https://drive.proton.me/urls/1YVCA6QWPR#aVLzc82ctvZl",
     },
     {
         tipo: "url",

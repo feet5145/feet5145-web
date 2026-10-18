@@ -7,7 +7,7 @@
 
 ## Historias
 - [ ] Completar descripción y etiquetas de «Castigo de pies», «Castigo de pies parte 2», «Solo una foto más», «Los deseos de mis pies», «Los pies de mi compañera» y «Pedalina»
-- [ ] Añadir los enlaces de cada historia (campo `enlace`)
+- [ ] Añadir los enlaces de Inkitt de cada historia (campo `enlace`)
 - [ ] Página con todas las historias (necesita React Router)
 - [ ] En la página de todas las historias: imagen hecha en Obsidian Canvas explicando las líneas temporales
 
@@ -23,7 +23,7 @@
 - [ ] Rellenar las URL de Inkitt, las dos cuentas de Wattpad y Discord, y el ID de Session (`src/data/enlaces.ts`)
 
 ## Pie de página
-- [ ] Añadir la URL del repositorio de GitHub (`URL_REPOSITORIO` en `src/components/layout/Footer.tsx`)
+- [x] Añadir la URL del repositorio de GitHub (`URL_REPOSITORIO` en `src/components/layout/Footer.tsx`)
 
 ## Retoques finales
 - [ ] Revisión general en móvil, metadatos de la página y favicon

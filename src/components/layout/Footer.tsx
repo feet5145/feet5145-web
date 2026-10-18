@@ -4,7 +4,7 @@ import { navLinks } from "../../data/navegacion";
 // URL del repositorio de GitHub. Mientras esté vacía, el texto se muestra sin enlace.
 const URL_REPOSITORIO = "https://github.com/feet5145/feet5145-web";
 // Enlaces de data/enlaces.ts que aparecen en el pie.
-const ENLACES_PIE = ["Inkitt", "Discord"];
+const ENLACES_PIE = ["Inkitt", "Descargar historias", "Discord"];
 
 const claseTituloColumna = "text-xs font-medium uppercase tracking-[0.2em] text-[#d9ad63]";
 const claseEnlace = "text-sm text-[#eee7dc]/80 transition-colors hover:text-[#edc577]";

@@ -21,6 +21,7 @@ export const historias: Historia[] = [
         descripcion: "Un lugar para respirar, para aislarte del ruido exterior.",
         etiquetas: ["Hipnosis", "Relax"],
         portada: "/portadas/barefoot-cafe.jpg",
+        enlace: "https://www.inkitt.com/stories/1905745",
         destacada: true,
     },
     {
@@ -29,6 +30,7 @@ export const historias: Historia[] = [
         descripcion: "Una nueva amiga peculiar, que solo quiere alguien a quien amar.",
         etiquetas: ["Hipnosis", "Amistad"],
         portada: "/portadas/los-zapatos-en-la-entrada.jpg",
+        enlace: "https://www.inkitt.com/stories/1643822",
         destacada: true,
     },
     {
@@ -37,6 +39,7 @@ export const historias: Historia[] = [
         descripcion: "Bastante diferente a lo que acostumbro: aquí no hay relax hasta el final, sino dominación.",
         etiquetas: ["Bruja", "Hipnosis"],
         portada: "/portadas/a-los-pies-de-la-bruja.jpg",
+        enlace: "https://www.inkitt.com/stories/1643334",
         destacada: true,
     },
     {
@@ -45,7 +48,7 @@ export const historias: Historia[] = [
         descripcion: "Conoce al personaje que más me ha gustado desarrollar, y que he usado como excusa para conectar las historias.",
         etiquetas: ["Dioses", "Hipnosis", "Pedalina"],
         portada: "/portadas/la-diosa-de-los-pies.jpg",
-        enlace: "https://drive.proton.me/urls/1YVCA6QWPR#aVLzc82ctvZl",
+        enlace: "https://www.inkitt.com/stories/1643318",
         destacada: true,
     },
     // TODO: completar descripción y etiquetas.

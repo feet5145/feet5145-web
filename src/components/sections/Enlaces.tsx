@@ -5,6 +5,7 @@ const TRAZOS: Record<Icono, string> = {
     libro: "M12 6.5C10 5 7 4.5 3 5v13c4-.5 7 0 9 1.5m0-13c2-1.5 5-2 9-1.5v13c-4-.5-7 0-9 1.5m0-13v13",
     chat: "M4 5h16v11H9l-5 4V5Zm4 5h.01M12 10h.01M16 10h.01",
     candado: "M6 11h12v9H6v-9Zm2 0V8a4 4 0 0 1 8 0v3m-4 4v2",
+    descarga: "M12 4v11m0 0-4-4m4 4 4-4M5 19h14",
 };
 
 function IconoEnlace({ icono, className = "h-6 w-6" }: { icono: Icono; className?: string }) {
@@ -140,7 +141,7 @@ function Enlaces() {
             <div className="mt-10 space-y-6">
                 {destacado && <EnlaceDestacado enlace={destacado} />}
 
-                <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {resto.map((enlace) => (
                         <TarjetaEnlace key={enlace.nombre} enlace={enlace} />
                     ))}
