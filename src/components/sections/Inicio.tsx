@@ -77,7 +77,7 @@ function Inicio() {
                         “
                     </span>
                     <blockquote className="font-serif text-2xl leading-snug text-[#f5eee2]">
-                        No es solo leer. Es pausar el mundo y encontrar un lugar suave donde ser tú.
+                        Obsesionado con mezclar pies femeninos con hipnosis.
                     </blockquote>
                     <div className="mt-6 flex justify-center text-[#d9ad63]">
                         <IconoTaza />

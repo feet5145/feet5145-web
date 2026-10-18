@@ -220,3 +220,12 @@ export const personajes: Personaje[] = [
 ];
 
 export const personajesDestacados = personajes.filter((personaje) => personaje.destacado).slice(0, 4);
+
+export function buscarPersonaje(id: string) {
+    return personajes.find((personaje) => personaje.id === id);
+}
+
+// Para enlazar las relaciones de una ficha con la ficha del otro personaje, si existe.
+export function buscarPersonajePorNombre(nombre: string) {
+    return personajes.find((personaje) => personaje.nombre === nombre);
+}

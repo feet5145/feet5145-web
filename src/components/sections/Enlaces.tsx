@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { enlaces, type Enlace, type Icono } from "../../data/enlaces";
+import EncabezadoSeccion from "../ui/EncabezadoSeccion";
 
 const TRAZOS: Record<Icono, string> = {
     libro: "M12 6.5C10 5 7 4.5 3 5v13c4-.5 7 0 9 1.5m0-13c2-1.5 5-2 9-1.5v13c-4-.5-7 0-9 1.5m0-13v13",
@@ -129,14 +130,7 @@ function Enlaces() {
 
     return (
         <section id="enlaces" className="mx-auto w-full max-w-7xl px-5 py-16 md:px-9 md:py-20">
-            {/* ENCABEZADO */}
-            <div>
-                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#d9ad63]">Enlaces</p>
-                <span className="mt-2 block h-px w-24 bg-[#d9ad63]" aria-hidden="true" />
-                <h2 className="mt-4 font-serif text-3xl font-semibold text-[#f5eee2] sm:text-4xl">
-                    Dónde encontrarme
-                </h2>
-            </div>
+            <EncabezadoSeccion etiqueta="Enlaces" titulo="Dónde encontrarme" />
 
             <div className="mt-10 space-y-6">
                 {destacado && <EnlaceDestacado enlace={destacado} />}

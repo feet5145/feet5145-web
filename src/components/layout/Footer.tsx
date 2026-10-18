@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { enlaces } from "../../data/enlaces";
 import { navLinks } from "../../data/navegacion";
 
@@ -27,9 +28,9 @@ function Footer() {
                     <ul className="mt-4 space-y-2">
                         {navLinks.map((link) => (
                             <li key={link.label}>
-                                <a href={link.href} className={claseEnlace}>
+                                <Link to={link.href} className={claseEnlace}>
                                     {link.label}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -51,9 +52,9 @@ function Footer() {
                             </li>
                         ))}
                         <li>
-                            <a href="#enlaces" className={claseEnlace}>
+                            <Link to="/#enlaces" className={claseEnlace}>
                                 Todos los enlaces →
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -86,13 +87,14 @@ function Footer() {
                         <p>© {new Date().getFullYear()} feet5145</p>
                     </div>
 
-                    <a
-                        href="#inicio"
+                    <button
+                        type="button"
+                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                         className="inline-flex shrink-0 items-center gap-2 self-start rounded-md border border-[#49351f] px-4 py-2 text-sm text-[#edc577] transition-colors hover:border-[#d9ad63] hover:bg-[#332316] md:self-auto"
                     >
                         Volver arriba
                         <span aria-hidden="true">↑</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </footer>
