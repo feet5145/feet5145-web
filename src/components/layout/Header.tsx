@@ -1,8 +1,8 @@
 
 
-function Header() {
-    const navLinks = [{ label: "Inicio", href: "#inicio" }, { label: "Historias", href: "#historias" }, { label: "Conoce a los personajes", href: "#personajes" }, { label: "Novedades", href: "#novedades" }, { label: "Enlaces", href: "#enlaces" },];
+import { navLinks } from "../../data/navegacion";
 
+function Header() {
     return (<header className="sticky top-0 z-50 w-full border-b border-[#49351f] bg-[#100b07]/95 text-[#f5eee2] backdrop-blur-md"> <nav
         aria-label="Navegación principal"
         className="relative mx-auto flex min-h-[68px] w-full items-center justify-between px-5 py-3 md:px-9"

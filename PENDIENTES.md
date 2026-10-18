@@ -22,5 +22,8 @@
 ## Enlaces
 - [ ] Rellenar las URL de Inkitt, las dos cuentas de Wattpad y Discord, y el ID de Session (`src/data/enlaces.ts`)
 
-## Secciones por hacer
-- [ ] Pie de página y retoques finales
+## Pie de página
+- [ ] Añadir la URL del repositorio de GitHub (`URL_REPOSITORIO` en `src/components/layout/Footer.tsx`)
+
+## Retoques finales
+- [ ] Revisión general en móvil, metadatos de la página y favicon

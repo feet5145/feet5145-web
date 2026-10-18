@@ -1,4 +1,6 @@
 import Header from "./components/layout/Header"
+import Footer from "./components/layout/Footer"
+import AvisoEdad from "./components/layout/AvisoEdad"
 import Inicio from "./components/sections/Inicio"
 import Historias from "./components/sections/Historias"
 import Personajes from "./components/sections/Personajes"
@@ -9,6 +11,8 @@ function App() {
 
   return (
     <>
+      <AvisoEdad />
+
       <Header></Header>
 
       <main>
@@ -22,6 +26,8 @@ function App() {
 
         <Enlaces />
       </main>
+
+      <Footer />
     </>
   )
 }
