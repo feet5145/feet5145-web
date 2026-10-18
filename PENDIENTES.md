@@ -19,6 +19,8 @@
 - [ ] Sustituir las novedades de ejemplo por reales (`src/data/novedades.ts`)
 - [ ] Página con todas las novedades (necesita React Router)
 
+## Enlaces
+- [ ] Rellenar las URL de Inkitt, las dos cuentas de Wattpad y Discord, y el ID de Session (`src/data/enlaces.ts`)
+
 ## Secciones por hacer
-- [ ] Enlaces
 - [ ] Pie de página y retoques finales

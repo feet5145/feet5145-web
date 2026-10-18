@@ -3,6 +3,7 @@ import Inicio from "./components/sections/Inicio"
 import Historias from "./components/sections/Historias"
 import Personajes from "./components/sections/Personajes"
 import Novedades from "./components/sections/Novedades"
+import Enlaces from "./components/sections/Enlaces"
 
 function App() {
 
@@ -19,9 +20,7 @@ function App() {
 
         <Novedades />
 
-        <section id="enlaces">
-          {/* Tus enlaces */}
-        </section>
+        <Enlaces />
       </main>
     </>
   )
