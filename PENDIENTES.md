@@ -2,14 +2,13 @@
 
 ## Imágenes
 - [ ] Fondo de Inicio: `public/fondos/inicio.jpg`
-- [ ] Portadas de historias en `public/portadas/` (`<id>.jpg`, ver `src/data/historias.ts`)
+- [x] Portadas de historias en `public/portadas/` (`<id>.jpg`, ver `src/data/historias.ts`)
 - [ ] Fotos de personajes en `public/personajes/` (`Pedalina.png`, `Cristina.png`, `Marina.jpg`, `El que elige.jpg`, …)
 
 ## Historias
-- [ ] Completar descripción y etiquetas de «Castigo de pies», «Castigo de pies parte 2», «Solo una foto más», «Los deseos de mis pies», «Los pies de mi compañera» y «Pedalina»
-- [ ] Añadir los enlaces de Inkitt de cada historia (campo `enlace`)
+- [x] Completar descripción y etiquetas de todas las historias
+- [x] Añadir los enlaces de Inkitt de cada historia (campo `enlace`)
 - [x] Página con todas las historias (`/historias`)
-- [ ] Imagen de las líneas temporales (Obsidian Canvas): exportarla a `public/lineas-temporales.png`
 
 ## Personajes
 - [ ] Fichas del resto de personajes (Artenón, Carolina, Lucía, Silvana, …)

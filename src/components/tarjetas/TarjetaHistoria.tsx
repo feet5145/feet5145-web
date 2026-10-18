@@ -9,7 +9,7 @@ function TarjetaHistoria({ historia }: { historia: Historia }) {
             {/* PORTADA: degradado de respaldo + imagen (si existe) */}
             <div className="relative overflow-hidden border-b border-[#49351f]">
                 <div
-                    className="aspect-[16/10] w-full bg-[#1a120b] bg-cover bg-center transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="aspect-[2/3] w-full bg-[#1a120b] bg-cover bg-center transition-transform duration-500 group-hover:scale-[1.03]"
                     style={{
                         backgroundImage: `url("${historia.portada}"), radial-gradient(ellipse at 50% 40%, #4a321c 0%, #1a120b 70%)`,
                     }}
