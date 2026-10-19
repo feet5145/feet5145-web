@@ -1,11 +1,10 @@
 # Compila la web y la publica en GitHub Pages cada vez que se sube un commit a main.
 name: Publicar en GitHub Pages
 
-# De momento solo se lanza a mano (pestaña Actions → «Run workflow»).
-# Cuando quieras que se publique con cada `git push`, borra los # de las dos líneas de push.
+# También se puede lanzar a mano desde la pestaña Actions → «Run workflow».
 on:
-  # push:
-  #   branches: [main]
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
