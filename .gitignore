@@ -30,3 +30,6 @@ fichas/
 
 # Plantilla visual de cómo me gustaría el diseño
 mi_wes.jpg
+
+# Originales de las imágenes optimizadas con `pnpm imagenes`
+imagenes-originales/

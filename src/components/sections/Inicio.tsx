@@ -1,3 +1,6 @@
+import { rutaPublica } from "../../utils/rutaPublica";
+import Huella from "../ui/Huella";
+
 // Imagen de fondo: colócala en public/fondos/inicio.jpg.
 // Mientras no exista, se ve solo el degradado cálido de respaldo.
 const FONDO_INICIO = "/fondos/inicio.jpg";
@@ -38,7 +41,7 @@ function Inicio() {
             <div
                 className="absolute inset-0 -z-10 bg-[#1a120b] bg-cover bg-center"
                 style={{
-                    backgroundImage: `url("${FONDO_INICIO}"), radial-gradient(ellipse at 70% 30%, #4a321c 0%, #1a120b 55%, #100b07 100%)`,
+                    backgroundImage: `url("${rutaPublica(FONDO_INICIO)}"), radial-gradient(ellipse at 70% 30%, #4a321c 0%, #1a120b 55%, #100b07 100%)`,
                 }}
             />
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#100b07]/95 via-[#100b07]/70 to-[#100b07]/30" />
@@ -47,6 +50,9 @@ function Inicio() {
             <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-5 py-16 md:px-9 md:py-24 lg:grid-cols-[1fr_auto] lg:py-28">
                 {/* IZQUIERDA: TÍTULO Y PRESENTACIÓN */}
                 <div className="max-w-xl">
+                    {/* MONOGRAMA */}
+                    <Huella className="mb-6 h-16 w-auto text-[#d9ad63] drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] sm:h-20" />
+
                     <h1 className="font-serif text-6xl font-semibold leading-none tracking-tight text-[#f5eee2] sm:text-7xl md:text-8xl">
                         feet5145
                     </h1>

@@ -5,6 +5,7 @@ import TextoFicha from "../components/ui/TextoFicha";
 import { buscarPersonaje } from "../data/personajes";
 import { useTituloPagina } from "../hooks/useTituloPagina";
 import PaginaNoEncontrada from "./PaginaNoEncontrada";
+import { rutaPublica } from "../utils/rutaPublica";
 
 function Apartado({ titulo, children }: { titulo: string; children: ReactNode }) {
     return (
@@ -38,7 +39,7 @@ function PaginaPersonaje() {
                     <div
                         className="aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl border border-[#d9ad63]/40 bg-[#1a120b] bg-cover bg-top shadow-2xl shadow-black/40 lg:max-w-none"
                         style={{
-                            backgroundImage: `url("${personaje.foto}"), radial-gradient(ellipse at 50% 35%, #4a321c 0%, #1a120b 70%)`,
+                            backgroundImage: `url("${rutaPublica(personaje.foto)}"), radial-gradient(ellipse at 50% 35%, #4a321c 0%, #1a120b 70%)`,
                         }}
                         role="img"
                         aria-label={`Retrato de ${personaje.nombre}`}

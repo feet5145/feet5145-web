@@ -2,6 +2,7 @@
 
 import { Link, useLocation } from "react-router";
 import { navLinks } from "../../data/navegacion";
+import { rutaPublica } from "../../utils/rutaPublica";
 
 function Header() {
     const { pathname, hash } = useLocation();
@@ -20,7 +21,7 @@ function Header() {
         aria-label="Ir al inicio"
         className="z-10 shrink-0 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#edc577]"
     > <img
-                src="/perfil.png"
+                src={rutaPublica("/perfil.webp")}
                 alt="Foto de perfil"
                 className="h-15 w-15 rounded-full border border-[#d9ad63] object-cover shadow-md shadow-black/30"
             /> </Link>

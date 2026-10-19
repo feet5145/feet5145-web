@@ -34,7 +34,7 @@ export const personajes: Personaje[] = [
         epiteto: "La Diosa de los pies",
         resumen:
             "Serena, elegante, protectora y ligeramente traviesa. Una mortal corriente convertida en Diosa, capaz de influir en cualquiera con pura suavidad.",
-        foto: "/personajes/Pedalina.png",
+        foto: "/personajes/Pedalina.webp",
         historias: ["la-diosa-de-los-pies", "castigo-de-pies", "solo-una-foto-mas", "barefoot-cafe"],
         destacado: true,
         datosBasicos: [
@@ -111,7 +111,7 @@ export const personajes: Personaje[] = [
         epiteto: "Una chica común muy subidita",
         resumen:
             "Arrogante y burlona hasta que un hechizo le dio la vuelta a su vida. Entre la vergüenza y una curiosidad que le cuesta admitir, empieza a descubrir lo que se siente al ser adorada.",
-        foto: "/personajes/Marina.jpg",
+        foto: "/personajes/Marina.webp",
         historias: ["castigo-de-pies", "castigo-de-pies-parte-2"],
         destacado: true,
         datosBasicos: [
@@ -155,7 +155,7 @@ export const personajes: Personaje[] = [
         epiteto: "La mejor amiga de Marina",
         resumen:
             "Inteligente, observadora y con un humor afilado. Cuando descubrió el hechizo no dudó en aprovecharlo, pero no es cruel de corazón: ahora carga con la culpa y trata de reparar el daño.",
-        foto: "/personajes/Clara.jpg",
+        foto: "/personajes/Clara.webp",
         historias: ["castigo-de-pies", "castigo-de-pies-parte-2"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "20 años" },
@@ -198,7 +198,7 @@ export const personajes: Personaje[] = [
         epiteto: "El cliente nuevo",
         resumen:
             "Un universitario tímido y reprimido que descubre el Barefoot Café y empieza a explorar deseos que tenía guardados.",
-        foto: "/personajes/Tomás.jpg",
+        foto: "/personajes/Tomás.webp",
         historias: ["barefoot-cafe"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "21" },
@@ -229,7 +229,7 @@ export const personajes: Personaje[] = [
         epiteto: "La bienvenida",
         resumen:
             "Tierna, paciente y empática. La camarera principal: la primera en atender a Tomás y quien le abrió la puerta al mundo del café.",
-        foto: "/personajes/Lucía.jpg",
+        foto: "/personajes/Lucía.webp",
         historias: ["barefoot-cafe"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "22 años" },
@@ -257,7 +257,7 @@ export const personajes: Personaje[] = [
         epiteto: "La tentación",
         resumen:
             "Directa, traviesa y seductora. No oculta sus intenciones, le gusta tomar la iniciativa y quiere atender a Tomás personalmente.",
-        foto: "/personajes/Maya.jpg",
+        foto: "/personajes/Maya.webp",
         historias: ["barefoot-cafe"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "23" },
@@ -289,7 +289,7 @@ export const personajes: Personaje[] = [
         epiteto: "La guardiana del umbral",
         resumen:
             "Observadora hasta la incomodidad y paciente hasta lo inhumano. Es quien decide quién está listo para ver lo que realmente ocurre en el Barefoot Café.",
-        foto: "/personajes/Carmen.jpg",
+        foto: "/personajes/Carmen.webp",
         historias: ["barefoot-cafe"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "23" },
@@ -329,7 +329,7 @@ export const personajes: Personaje[] = [
         epiteto: "El poder absoluto",
         resumen:
             "Un titán anciano, calmado y sabio, capaz de hacerlo CASI TODO, que prefiere delegar: escoge a mortales y los convierte en Dioses. Nadie ha visto nunca su rostro.",
-        foto: "/personajes/El que elige.jpg",
+        foto: "/personajes/El que elige.webp",
         historias: ["pedalina"],
         destacado: true,
         datosBasicos: [
@@ -364,7 +364,7 @@ export const personajes: Personaje[] = [
         epiteto: "El mejor amigo de Pedalina",
         resumen:
             "Criado en la alta sociedad, quiere ver lo que hay más allá de su burbuja y tomar sus propias decisiones. Leal y paciente, es el apoyo constante de Pedalina.",
-        foto: "/personajes/Artenón.jpg",
+        foto: "/personajes/Artenón.webp",
         historias: ["pedalina"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "25 años al final de la historia" },

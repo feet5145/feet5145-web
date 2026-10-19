@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import type { Personaje } from "../../data/personajes";
 import ListaApariciones from "../ui/ListaApariciones";
+import { rutaPublica } from "../../utils/rutaPublica";
 
 function TarjetaPersonaje({ personaje }: { personaje: Personaje }) {
     return (
@@ -13,7 +14,7 @@ function TarjetaPersonaje({ personaje }: { personaje: Personaje }) {
                 <div
                     className="aspect-[3/4] w-full bg-[#1a120b] bg-cover bg-top transition-transform duration-500 group-hover:scale-[1.03]"
                     style={{
-                        backgroundImage: `url("${personaje.foto}"), radial-gradient(ellipse at 50% 35%, #4a321c 0%, #1a120b 70%)`,
+                        backgroundImage: `url("${rutaPublica(personaje.foto)}"), radial-gradient(ellipse at 50% 35%, #4a321c 0%, #1a120b 70%)`,
                     }}
                     role="img"
                     aria-label={`Retrato de ${personaje.nombre}`}
