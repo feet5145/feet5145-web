@@ -18,7 +18,7 @@ function TarjetaNovedad({ novedad }: { novedad: Novedad }) {
 function Novedades() {
     return (
         <section id="novedades" className="mx-auto w-full max-w-7xl px-5 py-16 md:px-9 md:py-20">
-            <EncabezadoSeccion etiqueta="Novedades" titulo="Lo último desde el refugio">
+            <EncabezadoSeccion etiqueta="Novedades" titulo="Lo último desde el santuario de Pedalina">
                 <EnlaceVerTodos to="/novedades" texto="Ver todas las novedades" />
             </EncabezadoSeccion>
 
