@@ -5,7 +5,6 @@ export type Novedad = {
     texto: string;
 };
 
-// TODO: EJEMPLOS. Sustituir por novedades reales antes de publicar la web.
 export const novedades: Novedad[] = [
     {
         fecha: "2026-10-18",

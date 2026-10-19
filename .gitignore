@@ -24,6 +24,7 @@ dist-ssr
 *.sw?
 CLAUDE.md
 PENDIENTES.md
+guia/
 
 # Plantilla visual de cómo me gustaría el diseño
 mi_wes.jpg

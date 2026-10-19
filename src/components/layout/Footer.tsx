@@ -46,6 +46,10 @@ function Footer() {
                                     <a href={enlace.url} target="_blank" rel="noopener noreferrer" className={claseEnlace}>
                                         {enlace.nombre}
                                     </a>
+                                ) : enlace.tipo === "id" && enlace.valor ? (
+                                    <span className="text-sm text-[#eee7dc]/80">
+                                        {enlace.nombre}: <span className="text-[#edc577]">{enlace.valor}</span>
+                                    </span>
                                 ) : (
                                     <span className="text-sm text-[#eee7dc]/50">{enlace.nombre} (próximamente)</span>
                                 )}

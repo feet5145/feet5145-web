@@ -7,6 +7,7 @@ const TRAZOS: Record<Icono, string> = {
     chat: "M4 5h16v11H9l-5 4V5Zm4 5h.01M12 10h.01M16 10h.01",
     candado: "M6 11h12v9H6v-9Zm2 0V8a4 4 0 0 1 8 0v3m-4 4v2",
     descarga: "M12 4v11m0 0-4-4m4 4 4-4M5 19h14",
+    camara: "M4 7h3l2-3h6l2 3h3v12H4V7Zm8 9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z",
 };
 
 function IconoEnlace({ icono, className = "h-6 w-6" }: { icono: Icono; className?: string }) {
@@ -23,7 +24,7 @@ const claseBotonPrincipal = `${claseBoton} bg-[#d9ad63] text-[#100b07] hover:bg-
 const claseBotonSecundario = `${claseBoton} border border-[#49351f] text-[#edc577] hover:border-[#d9ad63] hover:bg-[#332316]`;
 const claseBotonInactivo = `${claseBoton} cursor-not-allowed border border-dashed border-[#49351f] text-[#eee7dc]/50`;
 
-function BotonCopiar({ valor }: { valor: string }) {
+function BotonCopiar({ valor, texto = "Copiar ID" }: { valor: string; texto?: string }) {
     const [copiado, setCopiado] = useState(false);
 
     async function copiar() {
@@ -38,7 +39,7 @@ function BotonCopiar({ valor }: { valor: string }) {
 
     return (
         <button type="button" onClick={copiar} className={claseBotonSecundario}>
-            {copiado ? "¡Copiado!" : "Copiar ID"}
+            {copiado ? "¡Copiado!" : texto}
         </button>
     );
 }
@@ -46,7 +47,7 @@ function BotonCopiar({ valor }: { valor: string }) {
 function Accion({ enlace, principal }: { enlace: Enlace; principal: boolean }) {
     if (enlace.tipo === "id") {
         return enlace.valor ? (
-            <BotonCopiar valor={enlace.valor} />
+            <BotonCopiar valor={enlace.valor} texto={enlace.textoBoton} />
         ) : (
             <span className={claseBotonInactivo}>Próximamente</span>
         );

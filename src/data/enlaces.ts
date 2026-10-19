@@ -1,4 +1,4 @@
-export type Icono = "libro" | "chat" | "candado" | "descarga";
+export type Icono = "libro" | "chat" | "candado" | "descarga" | "camara";
 
 type EnlaceBase = {
     nombre: string;
@@ -11,10 +11,16 @@ type EnlaceBase = {
 export type Enlace =
     // Enlace normal a una web. Si la url está vacía, se muestra como «Próximamente».
     | (EnlaceBase & { tipo: "url"; url: string })
-    // Identificador que se copia al portapapeles (por ejemplo, el ID de Session).
-    | (EnlaceBase & { tipo: "id"; valor: string; ayuda?: { texto: string; url: string } });
+    // Identificador que se copia al portapapeles (por ejemplo, el ID de Session o un usuario de Discord).
+    // `textoBoton` cambia el texto del botón (por defecto, «Copiar ID»).
+    | (EnlaceBase & {
+          tipo: "id";
+          valor: string;
+          textoBoton?: string;
+          ayuda?: { texto: string; url: string };
+      });
 
-// TODO: rellenar las url y el ID de Session.
+// TODO: rellenar el ID de Session.
 export const enlaces: Enlace[] = [
     {
         tipo: "url",
@@ -22,7 +28,7 @@ export const enlaces: Enlace[] = [
         descripcion:
             "Donde publico ahora mismo. Es la plataforma que menos problemas da a la hora de publicar este tipo de historias.",
         icono: "libro",
-        url: "",
+        url: "https://www.inkitt.com/feet5145",
         destacado: true,
     },
     {
@@ -38,21 +44,29 @@ export const enlaces: Enlace[] = [
         nombre: "Wattpad",
         descripcion: "Mi cuenta principal de Wattpad, donde escribo.",
         icono: "libro",
-        url: "",
+        url: "https://www.wattpad.com/user/feet5145_backup",
     },
     {
         tipo: "url",
         nombre: "Wattpad (lectura)",
         descripcion: "Cuenta de respaldo, solo de lectura, por si acaso.",
         icono: "libro",
-        url: "",
+        url: "https://www.wattpad.com/user/feet5145_readonly",
     },
     {
         tipo: "url",
+        nombre: "Instagram",
+        descripcion: "No le doy mucho uso, pero la tengo por si acaso.",
+        icono: "camara",
+        url: "https://www.instagram.com/feet_5145/",
+    },
+    {
+        tipo: "id",
         nombre: "Discord",
         descripcion: "Mi cuenta para charlar. Puedo tardar en responder.",
         icono: "chat",
-        url: "",
+        valor: "feet5145",
+        textoBoton: "Copiar usuario",
     },
     {
         tipo: "id",
