@@ -25,6 +25,9 @@ export type Personaje = {
     relaciones: string[];
     // Cada elemento es un punto de la lista.
     notas?: string[];
+    // (Opcional) Rol y relaciones propios de una historia concreta, para personajes que cambian
+    // mucho entre historias. Se muestran como «Rol en «Título»» y «Relaciones en «Título»».
+    porHistoria?: { historia: string; rol?: string[]; relaciones?: string[] }[];
 };
 
 export const personajes: Personaje[] = [
@@ -104,6 +107,28 @@ export const personajes: Personaje[] = [
             "**[[Carolina]]:** Su “propiedad” consentida y después su amante. La ayuda a superar su trauma con los pies descalzos.",
             "**[[lucia-deseos|Lucía]]:** Termina formando parte del trío. Cristina la acepta y la integra con naturalidad.",
             "**[[Silvana]]:** Su antigua maestra. Le tiene mucho respeto y cariño.",
+        ],
+        porHistoria: [
+            {
+                historia: "los-deseos-de-mis-pies",
+                rol: [
+                    "La Hechicera que se le aparece a Carolina para ayudarla a disculparse con Lucía. Le ofrece un trato: la propiedad de sus pies a cambio de contar con sus poderes, y Carolina lo firma con un beso en su pie. Prefiere la entrega voluntaria antes que hipnotizar a nadie a la fuerza.",
+                    "Por el cumpleaños de Lucía la acoge también bajo su protección: por primera vez tiene dos amas a la vez. Semanas después les pide convertirlas en sus sucesoras, y el símbolo del pecho une a las tres para siempre.",
+                ],
+            },
+            {
+                historia: "los-zapatos-en-la-entrada",
+                rol: [
+                    "En esta línea alternativa nunca conoce a Carolina ni a Lucía. Acoge en su casa de campo a cuatro amigas que se refugian de una tormenta y atrapa a Jimena con sus pies: curará a su madre a cambio de su cuerpo y su voluntad.",
+                    "Cuando Jimena huye, se queda sola y apagada, y la casa se desmorona con ella, hasta que Jimena vuelve y la devuelve a la vida adorando sus pies. Después se muda al piso de las chicas y las conquista una a una. Solo buscaba esclavas temporales, pero se encariña de ellas y acaba ofreciéndoles su casa de campo.",
+                ],
+                relaciones: [
+                    "**[[Jimena]]:** «Mi pequeña», su favorita y su «dulce esclava». Cuando huye, Cristina se siente sola por primera vez en su vida; cuando vuelve, la salva.",
+                    "**[[Anita]]:** La hechiza a través de los besos que Jimena le da en los pies con su pintalabios negro.",
+                    "**[[María]]:** La primera en confiar en ella: le deja mudarse al piso y la defiende delante de Laura.",
+                    "**[[Laura]]:** Su mayor rechazo, hasta que un sukiyaki y un poco de cariño la hacen rendirse.",
+                ],
+            },
         ],
     },
     {
@@ -196,9 +221,9 @@ export const personajes: Personaje[] = [
     {
         id: "tomas",
         nombre: "Tomás",
-        epiteto: "El cliente nuevo",
+        epiteto: "El cliente fiel",
         resumen:
-            "Un universitario tímido y reprimido que descubre el Barefoot Café y empieza a explorar deseos que tenía guardados.",
+            "Un universitario tímido y reprimido que descubre el Barefoot Café y empieza a explorar deseos que tenía guardados. Allí encuentra por fin su lugar: lejos del ruido, con Lucía y bajo la mirada de Pedalina.",
         foto: "/personajes/Tomás.webp",
         historias: ["barefoot-cafe"],
         datosBasicos: [
@@ -213,16 +238,24 @@ export const personajes: Personaje[] = [
         ],
         personalidad: [
             "Muy tímido, inseguro y reprimido. Curioso. Tiene un fuerte conflicto interno entre el deseo y la vergüenza. Es sincero y un poco torpe emocionalmente, pero capaz de ser valiente cuando se decide.",
+            "Tras la hipnosis de Pedalina, su timidez no desaparece: solo se queda dormida. Ya no le hace caso al miedo ni al «qué dirán», y por primera vez en mucho tiempo se siente feliz.",
         ],
         rol: [
             "Protagonista. Universitario que descubre el Barefoot Café y empieza a explorar deseos que tenía reprimidos.",
+            "Su dedicación llama la atención de Pedalina, que lo recibe en su santuario. Allí le cuenta su historia y le pide que le quite la timidez.",
         ],
         relaciones: [
-            "Se siente más seguro con [[lucia|Lucía]]",
-            "Se siente más nervioso e inseguro ante [[Maya]]",
-            "Cliente en proceso de transformación",
+            "**[[lucia|Lucía]]:** Su camarera favorita, porque con ella puede bajar la guardia. Primero su novia temporal y después su novia de verdad: se va a vivir con ella.",
+            "**[[Maya]]:** Lo ponía nervioso con su descaro. Al final, Lucía se lo «presta» para que adore sus pies de vez en cuando.",
+            "**[[Carmen]]:** Le retiró los pies cuando iba a lamerlos. Al final le pide perdón, y él no le guarda rencor.",
+            "**[[Pedalina]]:** Su Diosa. Lo hipnotiza para liberarlo de su miedo y le pide que vaya a visitarla de vez en cuando.",
         ],
-        notas: ["Ha besado el pie de Lucía (Capítulo 2). En el Capítulo 3 empieza a interactuar más con [[Maya]]"],
+        notas: [
+            "Sus padres, muy estrictos, le hicieron sentir siempre que nada de lo que hacía era suficiente. De ahí su culpa y su miedo a mostrar lo que desea.",
+            "Besa el pie de Lucía, le da un masaje y un beso a Maya y se lleva el rechazo de Carmen. Ese mismo día le pide a Lucía que sea su novia temporal.",
+            "Pedalina lo hipnotiza: su timidez se queda dormida y se entrega a ella.",
+            "Se va a vivir con Lucía y pasa a ser el cliente VIP del café: todo gratis, cortesía de Pedalina.",
+        ],
     },
     {
         id: "lucia",
@@ -255,7 +288,7 @@ export const personajes: Personaje[] = [
         nombre: "Maya",
         epiteto: "La tentación",
         resumen:
-            "Directa, traviesa y seductora. No oculta sus intenciones, le gusta tomar la iniciativa y quiere atender a Tomás personalmente.",
+            "Directa, traviesa y seductora. No oculta sus intenciones, le gusta tomar la iniciativa y quiere atender a Tomás personalmente… aunque, cuando por fin lo consigue, es ella la que pierde el control.",
         foto: "/personajes/Maya.webp",
         historias: ["barefoot-cafe"],
         datosBasicos: [
@@ -273,14 +306,23 @@ export const personajes: Personaje[] = [
         ],
         personalidad: [
             "Más directa, traviesa y seductora que [[lucia|Lucía]]. No oculta sus intenciones. Le gusta provocar y tomar la iniciativa. Coqueta y un poco pícara. Tiene un lado competitivo amistoso con [[lucia|Lucía]].",
+            "Detrás de la chica atrevida hay alguien que se deshace en cuanto la adoran: con el primer beso en su pie, su fachada se viene abajo.",
         ],
-        rol: ["Camarera. Fue la que recogía mesas el primer día de [[Tomás]]. Quiere “atenderlo” personalmente."],
+        rol: [
+            "Camarera. Fue la que recogía mesas el primer día de [[Tomás]]. Quiere “atenderlo” personalmente.",
+            "Le pide a Lucía atenderlo ella, lo tienta poniendo los pies sobre la mesa y le ofrece el café gratis a cambio de un masaje. Después le exige un beso en el pie: «Elige».",
+        ],
         relaciones: [
             "Amiga y compañera de [[lucia|Lucía]] (complicidad + competencia amistosa)",
-            "Interés activo y provocador hacia [[Tomás]]",
+            "Interés activo y provocador hacia [[Tomás]]. Al final, Lucía se lo «presta» para que adore sus pies de vez en cuando.",
             "Empleada de [[Pedalina]] en el Barefoot Café",
         ],
-        notas: ["En el Capítulo 3 empieza a tomar protagonismo con [[Tomás]]."],
+        notas: [
+            "Antes de entrar en el café no le gustaba andar descalza. Pedalina la hipnotizó para que lo amara y disfrutara mucho más el placer que dan los pies.",
+            "Con Tomás pasa de provocadora a entregada: tiembla en cuanto él le besa la planta.",
+            "Mira con algo de envidia, pero sin rencor, cómo Tomás se queda con Lucía.",
+            "Sigue seduciendo descaradamente con los clientes nuevos.",
+        ],
     },
     {
         id: "carmen",

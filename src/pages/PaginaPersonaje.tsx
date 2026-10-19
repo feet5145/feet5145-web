@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Link, useParams } from "react-router";
 import ListaApariciones from "../components/ui/ListaApariciones";
 import TextoFicha from "../components/ui/TextoFicha";
+import { buscarHistoria } from "../data/historias";
 import { buscarPersonaje } from "../data/personajes";
 import { useTituloPagina } from "../hooks/useTituloPagina";
 import PaginaNoEncontrada from "./PaginaNoEncontrada";
@@ -16,12 +17,30 @@ function Apartado({ titulo, children }: { titulo: string; children: ReactNode })
     );
 }
 
+function ListaRelaciones({ relaciones }: { relaciones: string[] }) {
+    return (
+        <ul className="list-disc space-y-3 pl-5 marker:text-[#d9ad63]">
+            {relaciones.map((relacion) => (
+                <li key={relacion}>
+                    <TextoFicha texto={relacion} />
+                </li>
+            ))}
+        </ul>
+    );
+}
+
 function PaginaPersonaje() {
     const { id = "" } = useParams();
     const personaje = buscarPersonaje(id);
     useTituloPagina(personaje?.nombre);
 
     if (!personaje) return <PaginaNoEncontrada />;
+
+    // Rol y relaciones propios de cada historia (solo algunos personajes, como Cristina).
+    const porHistoria = (personaje.porHistoria ?? []).map((apartado) => ({
+        ...apartado,
+        titulo: buscarHistoria(apartado.historia)?.titulo ?? apartado.historia,
+    }));
 
     return (
         <div className="mx-auto w-full max-w-7xl px-5 py-12 md:px-9 md:py-16">
@@ -102,16 +121,37 @@ function PaginaPersonaje() {
                         </Apartado>
                     )}
 
+                    {porHistoria.map(
+                        (apartado) =>
+                            apartado.rol &&
+                            apartado.rol.length > 0 && (
+                                <Apartado key={`rol-${apartado.historia}`} titulo={`Rol en «${apartado.titulo}»`}>
+                                    {apartado.rol.map((parrafo) => (
+                                        <p key={parrafo}>
+                                            <TextoFicha texto={parrafo} />
+                                        </p>
+                                    ))}
+                                </Apartado>
+                            ),
+                    )}
+
                     {personaje.relaciones.length > 0 && (
                         <Apartado titulo="Relaciones">
-                            <ul className="list-disc space-y-3 pl-5 marker:text-[#d9ad63]">
-                                {personaje.relaciones.map((relacion) => (
-                                    <li key={relacion}>
-                                        <TextoFicha texto={relacion} />
-                                    </li>
-                                ))}
-                            </ul>
+                            <ListaRelaciones relaciones={personaje.relaciones} />
                         </Apartado>
+                    )}
+
+                    {porHistoria.map(
+                        (apartado) =>
+                            apartado.relaciones &&
+                            apartado.relaciones.length > 0 && (
+                                <Apartado
+                                    key={`relaciones-${apartado.historia}`}
+                                    titulo={`Relaciones en «${apartado.titulo}»`}
+                                >
+                                    <ListaRelaciones relaciones={apartado.relaciones} />
+                                </Apartado>
+                            ),
                     )}
 
                     {personaje.notas && personaje.notas.length > 0 && (
