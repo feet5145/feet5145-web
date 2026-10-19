@@ -1,7 +1,8 @@
 import { useId } from "react";
 
 // Planta de un pie con una espiral hipnótica: la misma forma que el favicon (public/favicon.svg).
-// La espiral está recortada, así que deja ver lo que haya detrás.
+// La espiral está recortada, así que deja ver lo que haya detrás, y gira sin parar
+// (salvo si el visitante tiene activado «reducir movimiento»).
 function Huella({ className = "" }: { className?: string }) {
     const idMascara = useId();
 
@@ -14,6 +15,8 @@ function Huella({ className = "" }: { className?: string }) {
                     fill="none"
                     stroke="black"
                     strokeWidth={1.9}
+                    className="motion-safe:animate-girar"
+                    style={{ transformOrigin: "32.5px 32px" }}
                     strokeLinecap="round"
                     strokeLinejoin="round"
                 />

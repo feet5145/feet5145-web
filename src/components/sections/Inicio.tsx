@@ -51,7 +51,10 @@ function Inicio() {
                 {/* IZQUIERDA: TÍTULO Y PRESENTACIÓN */}
                 <div className="max-w-xl">
                     {/* MONOGRAMA */}
-                    <Huella className="mb-6 h-16 w-auto text-[#d9ad63] drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] sm:h-20" />
+                    {/* Detalle escondido: al pasar el ratón por encima aparece el mensaje del title */}
+                    <span title="Mira la espiral fijamente… sin parpadear…" className="mb-6 inline-block">
+                        <Huella className="h-16 w-auto text-[#d9ad63] drop-shadow-[0_0_14px_rgba(237,197,119,0.55)] transition-colors duration-700 hover:text-[#edc577] sm:h-20" />
+                    </span>
 
                     <h1 className="font-serif text-6xl font-semibold leading-none tracking-tight text-[#f5eee2] sm:text-7xl md:text-8xl">
                         feet5145

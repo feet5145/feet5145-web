@@ -9,7 +9,10 @@ function PaginaNoEncontrada() {
             <p className="font-serif text-7xl font-semibold text-[#d9ad63]">404</p>
             <h1 className="mt-4 font-serif text-4xl font-semibold text-[#f5eee2]">Este rincón no existe</h1>
             <p className="mt-3 text-[#eee7dc]/80">
-                Puede que el enlace esté mal escrito o que la página se haya movido.
+                Quizá Pedalina te ha distraído un momento con sus pies…
+            </p>
+            <p className="mt-1 text-sm text-[#eee7dc]/60">
+                O puede que el enlace esté mal escrito o que la página se haya movido.
             </p>
             <Link
                 to="/"

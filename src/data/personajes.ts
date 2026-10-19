@@ -128,7 +128,7 @@ export const personajes: Personaje[] = [
         epiteto: "La Hechicera",
         resumen:
             "Dulce, paciente y cariñosa, con un lado juguetón y dominante. Una Hechicera misteriosa que guía y cuida a través de la hipnosis, y el nexo entre el mundo mágico y las protagonistas.",
-        foto: "/personajes/Cristina.png",
+        foto: "/personajes/Cristina.webp",
         historias: ["los-deseos-de-mis-pies", "los-pies-de-mi-companera", "los-zapatos-en-la-entrada"],
         destacado: true,
         datosBasicos: [
@@ -548,7 +548,7 @@ export const personajes: Personaje[] = [
         epiteto: "La que odiaba ir descalza",
         resumen:
             "Odiaba ir descalza hasta que una Hechicera le propuso un trato: sus pies a cambio de deseos. Hoy es una de las sucesoras de Cristina y la mitad de un amor a tres.",
-        foto: "/personajes/Carolina.jpg",
+        foto: "/personajes/Carolina.webp",
         historias: ["los-deseos-de-mis-pies", "los-pies-de-mi-companera"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "19 años" },
@@ -605,7 +605,7 @@ export const personajes: Personaje[] = [
         epiteto: "La mejor amiga de Carolina",
         resumen:
             "Tímida, muy inteligente y fetichista de pies desde mucho antes que nadie. Ayudó a Carolina a volver a ir descalza y acabó siendo su pareja.",
-        foto: "/personajes/Lucía (Los deseos de mis pies).jpg",
+        foto: "/personajes/Luci.webp",
         historias: ["los-deseos-de-mis-pies", "los-pies-de-mi-companera"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "20 años (los cumple durante la historia)" },
@@ -651,7 +651,7 @@ export const personajes: Personaje[] = [
         epiteto: "La maestra de Cristina",
         resumen:
             "La Hechicera que, años atrás, le ofreció a Cristina un trato a cambio de sus pies y la convirtió en su sucesora. Todavía sigue buscando el amor.",
-        foto: "/personajes/Silvana.jpg",
+        foto: "/personajes/Silvana.webp",
         historias: ["los-deseos-de-mis-pies"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "24 años" },
@@ -1091,7 +1091,7 @@ export const personajes: Personaje[] = [
         epiteto: "El fotógrafo",
         resumen:
             "El fotógrafo más guapo que ha tenido Lilith… y el que menos quería estar allí. Hasta que ella le pidió «solo una foto más».",
-        foto: "/personajes/John.jpg",
+        foto: "/personajes/John.webp",
         historias: ["solo-una-foto-mas"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "23" },
@@ -1141,7 +1141,7 @@ export const personajes: Personaje[] = [
         epiteto: "La bruja",
         resumen:
             "Una bruja que, en un autobús, encontró al conejillo de indias perfecto para sus pociones. Lo que no esperaba era acabar enamorándose de él.",
-        foto: "/personajes/Manuela.jpg",
+        foto: "/personajes/Manuela.webp",
         historias: ["a-los-pies-de-la-bruja"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "Aparenta una edad similar a la de Jorge (26 años)" },
@@ -1255,7 +1255,7 @@ export const personajes: Personaje[] = [
         epiteto: "Spider-Woman",
         resumen:
             "Gwen Stacy, distante por fuera y heroína por las noches. Un descuido le descubre su secreto a su compañero de habitación, y con él vuelve a dejarse querer.",
-        foto: "/personajes/Gwen.jpg",
+        foto: "/personajes/Gwen.webp",
         historias: ["a-los-pies-de-spider-gwen"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: " 23 años" },
@@ -1293,7 +1293,7 @@ export const personajes: Personaje[] = [
         epiteto: "El compañero de habitación",
         resumen:
             "Recién llegado a la universidad y apasionado de la programación. Le tocó compartir habitación con la chica más distante del campus… y con su mayor secreto.",
-        foto: "/personajes/Leo.jpg",
+        foto: "/personajes/Leo.webp",
         historias: ["a-los-pies-de-spider-gwen"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "19 años, recién llegado a la universidad" },

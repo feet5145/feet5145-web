@@ -2,6 +2,15 @@
 
 @theme {
     --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+
+    /* Huella de la portada: la espiral gira sin parar */
+    --animate-girar: girar 6s linear infinite;
+
+    @keyframes girar {
+        to {
+            transform: rotate(-360deg);
+        }
+    }
 }
 
 html {
