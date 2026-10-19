@@ -3,7 +3,7 @@ import Huella from "../ui/Huella";
 
 // Imagen de fondo: colócala en public/fondos/inicio.jpg.
 // Mientras no exista, se ve solo el degradado cálido de respaldo.
-const FONDO_INICIO = "/fondos/inicio.jpg";
+const FONDO_INICIO = "/fondos/inicio.webp";
 
 function Separador({ className = "" }: { className?: string }) {
     return (
@@ -39,7 +39,7 @@ function Inicio() {
         <section id="inicio" className="relative isolate overflow-hidden border-b border-[#49351f]">
             {/* FONDO: degradado de respaldo + imagen (si existe) + velo oscuro para legibilidad */}
             <div
-                className="absolute inset-0 -z-10 bg-[#1a120b] bg-cover bg-center"
+                className="absolute inset-0 -z-10 bg-[#1a120b] bg-cover bg-[position:70%_center] lg:bg-center"
                 style={{
                     backgroundImage: `url("${rutaPublica(FONDO_INICIO)}"), radial-gradient(ellipse at 70% 30%, #4a321c 0%, #1a120b 55%, #100b07 100%)`,
                 }}
@@ -78,7 +78,7 @@ function Inicio() {
                 </div>
 
                 {/* DERECHA: CITA */}
-                <figure className="w-full max-w-sm justify-self-center rounded-2xl border border-[#d9ad63]/40 bg-[#17100b]/80 p-8 shadow-2xl shadow-black/40 backdrop-blur-sm lg:justify-self-end">
+                <figure className="w-full max-w-sm justify-self-center lg:self-end rounded-2xl border border-[#d9ad63]/40 bg-[#17100b]/80 p-8 shadow-2xl shadow-black/40 backdrop-blur-sm lg:justify-self-end">
                     <span className="block font-serif text-6xl leading-none text-[#d9ad63]" aria-hidden="true">
                         “
                     </span>

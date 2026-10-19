@@ -73,6 +73,54 @@ export const personajes: Personaje[] = [
             "Mejor amiga de [[Artenón]] desde la infancia. Él fue el único que se atrevió a adorar sus pies, aunque pertenecía a una sociedad superior.",
             "Elegida por [[El que elige]], que se fijó en su presencia serena e hipnótica al verla con Artenón.",
         ],
+        porHistoria: [
+            {
+                historia: "la-diosa-de-los-pies",
+                rol: [
+                    "Tenía a Nicolás asignado como súbdito y, tras años comprobando su lealtad a través de Naiara, el ángel de la guarda que creó para él, decide recompensarlo: lo lleva a su paraíso y lo ayuda a convertir una fiesta de pijamas en una fiesta de pies.",
+                    "Al final Nicolás le entrega su cuerpo y su alma. Ella le deja visitar su paraíso siempre que quiera y hace que Naiara pueda quedarse en la Tierra con él.",
+                ],
+                relaciones: [
+                    "**[[Nicolás]]:** Su súbdito más leal, al que recompensa abriéndole las puertas de su paraíso.",
+                    "**[[Naiara]]:** El ángel de la guarda que creó para Nicolás.",
+                ],
+            },
+            {
+                historia: "castigo-de-pies",
+                rol: [
+                    "Marina se burla de sus pies en el parque sin saber quién es. Pedalina la castiga con un hechizo: ver unos pies la sume en una hipnosis que la obliga a adorarlos.",
+                    "Cuando ve que ha aprendido la lección, la libera con una condición: no volver a burlarse de los pies ni de los fetichistas, o el hechizo volverá con más fuerza.",
+                ],
+                relaciones: [
+                    "**[[Marina]]:** La chica que se burló de sus pies, a la que castiga y, después, perdona.",
+                ],
+            },
+            {
+                historia: "solo-una-foto-mas",
+                rol: [
+                    "Escucha el deseo de Lilith de enamorar a su fotógrafo con los pies. Tras pedirle consejo a Ainoa, se le presenta con un mensaje y le concede el poder de hipnotizar con ellos.",
+                    "Vuelve al final para ver a Lilith convertida en la reina de su propio palacio, con John como fiel siervo, y le promete que conocerá a su ángel de la guarda.",
+                ],
+                relaciones: [
+                    "**[[Lilith]]:** Su «preciosa gótica», a la que concede su deseo.",
+                    "**[[John]]:** Gracias a su bendición, acaba siendo el fiel siervo de Lilith.",
+                    "**[[Ainoa]]:** El ángel de la guarda de Lilith, al que pide consejo.",
+                ],
+            },
+            {
+                historia: "barefoot-cafe",
+                rol: [
+                    "Dueña del Barefoot Café, que creó como un refugio donde los fetichistas de pies no fueran ridiculizados. Sus camareras trabajan descalzas bajo su hipnosis, salvo Carmen, y ella siente todo lo que pasa en el local.",
+                    "Recibe a Tomás en su santuario, lo hipnotiza para que su timidez se quede dormida y lo anima a irse a vivir con Lucía. Al final le pide que vaya a visitarla de vez en cuando.",
+                ],
+                relaciones: [
+                    "**[[lucia|Lucía]]:** La hipnotizó para que dejara de darle vergüenza ir descalza y ser adorada, conservando su dulzura.",
+                    "**[[Maya]]:** No le gustaba andar descalza, así que le «faltó tiempo» para hipnotizarla.",
+                    "**[[Carmen]]:** La única que la obedece por voluntad propia, sin hipnosis. Se ganó su confianza de forma natural.",
+                    "**[[Tomás]]:** Lo libera de su miedo y lo acoge en su café para siempre.",
+                ],
+            },
+        ],
     },
     {
         id: "cristina",
@@ -114,6 +162,12 @@ export const personajes: Personaje[] = [
                 rol: [
                     "La Hechicera que se le aparece a Carolina para ayudarla a disculparse con Lucía. Le ofrece un trato: la propiedad de sus pies a cambio de contar con sus poderes, y Carolina lo firma con un beso en su pie. Prefiere la entrega voluntaria antes que hipnotizar a nadie a la fuerza.",
                     "Por el cumpleaños de Lucía la acoge también bajo su protección: por primera vez tiene dos amas a la vez. Semanas después les pide convertirlas en sus sucesoras, y el símbolo del pecho une a las tres para siempre.",
+                ],
+            },
+            {
+                historia: "los-pies-de-mi-companera",
+                rol: [
+                    "Ya forma un trío de hechiceras con Carolina y Lucía. Da el visto bueno a la propuesta que Carolina le hace a Ana en sueños y la acompaña a la consulta a probar su «tratamiento», donde Carolina la presenta como aquella gracias a la cual «estamos como estamos».",
                 ],
             },
             {
@@ -174,6 +228,15 @@ export const personajes: Personaje[] = [
             "**Resto de amigas / compañeros de universidad:** Relación deteriorada. La mayoría la sigue viendo como el chiste de los vídeos.",
             "**Clientes y camareras del Barefoot Café:** Al principio es solo una relación laboral forzada. Con el tiempo se vuelve más cercana y personal.",
         ],
+        porHistoria: [
+            {
+                historia: "castigo-de-pies",
+                rol: [
+                    "Se burla de los pies de una desconocida en el parque: Pedalina. Esa noche recibe un hechizo, y desde entonces ver unos pies la sume en una hipnosis que la obliga a adorarlos.",
+                    "Clara lo descubre y la humilla delante de sus amigas, que la graban y se aprovechan de ella durante días. Cuando de verdad se arrepiente, Pedalina la libera con una condición: no volver a burlarse de los pies ni de los fetichistas.",
+                ],
+            },
+        ],
     },
     {
         id: "clara",
@@ -216,6 +279,15 @@ export const personajes: Personaje[] = [
             "**[[Marina]]:** Su mejor amiga. La quiere de verdad, pero durante un tiempo priorizó su propia diversión y deseo de “darle una lección”. Ahora carga con la culpa y trata de estar a su lado.",
             "**[[Pedalina]]:** No la conoce personalmente (al menos al inicio de la Parte 2), pero es consciente de que existe por lo que Marina le contó. Le genera una mezcla de curiosidad, respeto y algo de miedo.",
             "**Resto del grupo de amigas:** Es una de las líderes naturales del grupo. Las otras suelen seguirle la corriente.",
+        ],
+        porHistoria: [
+            {
+                historia: "castigo-de-pies",
+                rol: [
+                    "Sospecha al ver que Marina mira sus pies sin burlarse, y lo comprueba con un calcetín sudado. Al descubrir el hechizo la convierte en su esclava y organiza una noche de chicas para humillarla delante de todas.",
+                    "Tras días de abusos, la culpa puede más: le pide perdón a Marina, que la perdona y le cuenta lo de Pedalina.",
+                ],
+            },
         ],
     },
     {
@@ -282,6 +354,15 @@ export const personajes: Personaje[] = [
             "Tierna, paciente, empática y juguetona de forma suave. No presiona a los clientes. Prefiere crear un ambiente de seguridad y dejar que las cosas fluyan. Tiene un lado coqueto pero siempre desde el cuidado.",
         ],
         relaciones: ["Empleada de [[Pedalina]]", "Guía paciente de [[Tomás]]", "Amiga y compañera de [[Maya]]"],
+        porHistoria: [
+            {
+                historia: "barefoot-cafe",
+                rol: [
+                    "Camarera principal. Fue la primera en atender a [[Tomás]] y quien le abrió la puerta al mundo del café. Suele ser la más protectora con los clientes nuevos y tímidos.",
+                    "Consuela a Tomás tras el rechazo de Carmen, acepta ser su novia temporal y deciden ver si lo suyo funciona de verdad. Al final se van a vivir juntos.",
+                ],
+            },
+        ],
     },
     {
         id: "maya",
@@ -496,12 +577,31 @@ export const personajes: Personaje[] = [
             "**[[lucia-deseos|Lucía]]:** Su mejor amiga, a la que le gritó en clase de voleibol. Tras disculparse con sus pies, acaba siendo su pareja.",
             "**[[Cristina]]:** La Hechicera a la que entrega la propiedad de sus pies. Termina formando parte de su relación.",
             "**[[Silvana]]:** La maestra de Cristina, a la que conoce al final.",
-            "**[[Ana]]:** Se le aparece en sueños para proponerle un trato: el aprobado a cambio de usar sus pies como tratamiento.",
+        ],
+        porHistoria: [
+            {
+                historia: "los-deseos-de-mis-pies",
+                rol: [
+                    "Desde que se cortó un pie odia ir descalza, y en clase de voleibol le grita a Lucía. Para disculparse acepta el trato de Cristina: la propiedad de sus pies a cambio de contar con sus poderes.",
+                    "Prepara para el cumpleaños de Lucía una sorpresa de pies e hipnosis, y acaban siendo pareja. Semanas después, las dos aceptan ser las sucesoras de Cristina.",
+                ],
+            },
+            {
+                historia: "los-pies-de-mi-companera",
+                rol: [
+                    "Ya como hechicera, se le aparece a Ana en sueños: la nota máxima y clientes a cambio de que siga usando sus pies como tratamiento cuando sea psicóloga.",
+                    "Después va con sus dos amores a probar ese tratamiento y hace flotar a Manuel para que se crea la historia.",
+                ],
+                relaciones: [
+                    "**[[Ana]]:** Se le aparece en sueños para proponerle un trato: el aprobado a cambio de usar sus pies como tratamiento.",
+                    "**[[Manuel]]:** Lo hace flotar para demostrarle que lo que le contó Ana era verdad.",
+                ],
+            },
         ],
     },
     {
         id: "lucia-deseos",
-        nombre: "Lucía",
+        nombre: "Luci",
         epiteto: "La mejor amiga de Carolina",
         resumen:
             "Tímida, muy inteligente y fetichista de pies desde mucho antes que nadie. Ayudó a Carolina a volver a ir descalza y acabó siendo su pareja.",
@@ -528,6 +628,21 @@ export const personajes: Personaje[] = [
             "**[[Carolina]]:** Su mejor amiga y, tras su cumpleaños, su pareja.",
             "**[[Cristina]]:** Pasa a ser su segunda ama y parte de la relación.",
             "**[[Silvana]]:** La maestra de Cristina.",
+        ],
+        porHistoria: [
+            {
+                historia: "los-deseos-de-mis-pies",
+                rol: [
+                    "La mejor amiga de Carolina y fetichista de pies desde mucho antes. Tras la disculpa de Carolina y la sorpresa de su cumpleaños, acaban siendo pareja, y Cristina la acoge también: le entrega la propiedad de sus pies con un beso.",
+                    "Semanas después acepta, junto a Carolina, ser sucesora de Cristina.",
+                ],
+            },
+            {
+                historia: "los-pies-de-mi-companera",
+                rol: [
+                    "Acompaña a Carolina y a Cristina a la consulta de Ana. Como las tres están sincronizadas, siente todo lo que Carolina recibe durante el tratamiento.",
+                ],
+            },
         ],
     },
     {
