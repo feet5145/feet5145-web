@@ -35,7 +35,7 @@ export const personajes: Personaje[] = [
         resumen:
             "Serena, elegante, protectora y ligeramente traviesa. Una mortal corriente convertida en Diosa, capaz de influir en cualquiera con pura suavidad.",
         foto: "/personajes/Pedalina.webp",
-        historias: ["la-diosa-de-los-pies", "castigo-de-pies", "solo-una-foto-mas", "barefoot-cafe"],
+        historias: ["pedalina", "la-diosa-de-los-pies", "castigo-de-pies", "solo-una-foto-mas", "barefoot-cafe", "castigo-de-pies-parte-2"],
         destacado: true,
         datosBasicos: [
             {
@@ -64,10 +64,11 @@ export const personajes: Personaje[] = [
         ],
         personalidad: [
             "Serena, elegante, protectora y ligeramente traviesa. Habla con calma y seguridad. Tiene una capacidad casi sobrenatural para influir en las personas a través de la suavidad y la hipnosis sutil.",
+            "Nació como una mortal plebeya en la época de la antigua Grecia y Roma: una chica dulce, amable y calmada que lograba que todo el mundo se sintiera feliz con su presencia. Ya entonces le picaba la curiosidad de qué se sentiría al ser adorada.",
         ],
         relaciones: [
-            "Mejor amiga de [[Artenón]]",
-            "Elegida por [[El que elige]]",
+            "Mejor amiga de [[Artenón]] desde la infancia. Él fue el único que se atrevió a adorar sus pies, aunque pertenecía a una sociedad superior.",
+            "Elegida por [[El que elige]], que se fijó en su presencia serena e hipnótica al verla con Artenón.",
         ],
     },
     {
@@ -230,7 +231,7 @@ export const personajes: Personaje[] = [
         resumen:
             "Tierna, paciente y empática. La camarera principal: la primera en atender a Tomás y quien le abrió la puerta al mundo del café.",
         foto: "/personajes/Lucía.webp",
-        historias: ["barefoot-cafe"],
+        historias: ["barefoot-cafe", "castigo-de-pies-parte-2"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "22 años" },
             { etiqueta: "Altura", valor: "Media" },
@@ -247,9 +248,7 @@ export const personajes: Personaje[] = [
         personalidad: [
             "Tierna, paciente, empática y juguetona de forma suave. No presiona a los clientes. Prefiere crear un ambiente de seguridad y dejar que las cosas fluyan. Tiene un lado coqueto pero siempre desde el cuidado.",
         ],
-        rol: ["Camarera principal. Fue la primera en atender a [[Tomás]] y quien le abrió la puerta al mundo del café."],
         relaciones: ["Empleada de [[Pedalina]]", "Guía paciente de [[Tomás]]", "Amiga y compañera de [[Maya]]"],
-        notas: ["Suele ser la más protectora con los clientes nuevos y tímidos."],
     },
     {
         id: "maya",
@@ -401,11 +400,24 @@ export const personajes: Personaje[] = [
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "Tan viejo como el tiempo mismo" },
             { etiqueta: "Altura", valor: "1.95 metros" },
-            { etiqueta: "Rasgos destacados", valor: "Es el Dios del tiempo. ¿Qué más rasgos destacados quieres? XD" },
+            { etiqueta: "Complexión", valor: "Alto, delgado y fibroso, de porte imponente" },
+            { etiqueta: "Color de piel", valor: "Negra grisácea, recorrida por grietas doradas que brillan como si el tiempo se le escapara por ellas" },
+            { etiqueta: "Color de cabello", valor: "Gris plateado, corto y peinado hacia atrás" },
+            { etiqueta: "Color de ojos", valor: "Blancos y brillantes, sin pupilas" },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "Es el Dios del tiempo. ¿Qué más rasgos destacados quieres? XD Bueno, por si acaso: un halo dorado tras la cabeza, un collar con números romanos como la esfera de un reloj, unas enormes alas oscuras y una guadaña dorada.",
+            },
         ],
         personalidad: [],
         rol: ["Dios del tiempo"],
-        relaciones: [],
+        relaciones: [
+            "**[[El que elige]]:** Ni siquiera Chronos es capaz de explicar qué había antes del tiempo, cuando El que elige ya existía.",
+        ],
+        notas: [
+            "Es el único Dios que opera de manera independiente: controla el tiempo, y NADA ni NADIE se atreve a manipularlo.",
+            "Alterar el tiempo puede tener consecuencias catastróficas a nivel existencial.",
+        ],
     },
     {
         id: "carolina",

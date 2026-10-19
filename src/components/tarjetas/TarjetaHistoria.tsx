@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import type { Historia } from "../../data/historias";
 import IconoPluma from "../ui/IconoPluma";
 import { rutaPublica } from "../../utils/rutaPublica";
@@ -46,20 +47,13 @@ function TarjetaHistoria({ historia }: { historia: Historia }) {
         </>
     );
 
-    const clases =
-        "group flex flex-col overflow-hidden rounded-xl border border-[#49351f] shadow-lg shadow-black/30 transition-colors hover:border-[#d9ad63]/70";
-
-    return historia.enlace && !proximamente ? (
-        <a
-            href={historia.enlace}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${clases} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#edc577]`}
+    return (
+        <Link
+            to={`/historias/${historia.id}`}
+            className={`group flex flex-col overflow-hidden rounded-xl border border-[#49351f] shadow-lg shadow-black/30 transition-colors hover:border-[#d9ad63]/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#edc577] ${proximamente ? "opacity-80 hover:opacity-100" : ""}`}
         >
             {contenido}
-        </a>
-    ) : (
-        <article className={`${clases} ${proximamente ? "opacity-80" : ""}`}>{contenido}</article>
+        </Link>
     );
 }
 

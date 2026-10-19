@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import Layout from "./components/layout/Layout";
 import PaginaPrincipal from "./pages/PaginaPrincipal";
 import PaginaHistorias from "./pages/PaginaHistorias";
+import PaginaHistoria from "./pages/PaginaHistoria";
 import PaginaPersonajes from "./pages/PaginaPersonajes";
 import PaginaPersonaje from "./pages/PaginaPersonaje";
 import PaginaNovedades from "./pages/PaginaNovedades";
@@ -13,6 +14,7 @@ function App() {
             <Route element={<Layout />}>
                 <Route index element={<PaginaPrincipal />} />
                 <Route path="historias" element={<PaginaHistorias />} />
+                <Route path="historias/:id" element={<PaginaHistoria />} />
                 <Route path="personajes" element={<PaginaPersonajes />} />
                 <Route path="personajes/:id" element={<PaginaPersonaje />} />
                 <Route path="novedades" element={<PaginaNovedades />} />

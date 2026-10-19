@@ -23,11 +23,14 @@ export type Historia = {
     // Identificador corto, usado por los personajes para indicar en qué historias aparecen.
     id: string;
     titulo: string;
+    // Texto corto de la tarjeta.
     descripcion: string;
+    // (Opcional) Texto más largo para la página de la historia, en párrafos. Si no hay, se usa la descripción.
+    sinopsis?: string[];
     etiquetas: string[];
     // Ruta dentro de public/. Si la imagen aún no existe, la tarjeta muestra un degradado.
     portada: string;
-    // Enlace a la historia (Wattpad, etc.). Si se deja vacío, la tarjeta no es clicable.
+    // Enlace para leer la historia (Inkitt). Sale como botón en la página de la historia.
     enlace?: string;
     // Apartado de la página de historias en el que aparece.
     linea: Linea;
@@ -44,7 +47,13 @@ export const historias: Historia[] = [
         id: "pedalina",
         titulo: "Pedalina",
         descripcion:
-            "Como buen escritor, saco la precuela mucho tiempo después de la original. Conoce los orígenes de uno de los personajes con los que más me he encariñado, y que sirve como unión de una parte importante de las historias.",
+            "Como buen escritor, saco la precuela mucho tiempo después de la original. En un universo donde cada deseo humano da lugar a un Dios, una joven mortal de pies imperfectamente perfectos llama la atención de El que elige. Así nació Pedalina, la Diosa de los pies.",
+        sinopsis: [
+            "En el momento en que el tiempo decidió que la antigua Grecia y Roma fueran algo a destacar, Pedalina nació como una mortal cualquiera.",
+            "En un universo donde cada deseo humano suficientemente extendido da lugar a un Dios, ya existía una deidad encargada de elegir a quienes ocuparían los tronos divinos.",
+            "Cuando el fetiche de los pies comenzó a extenderse entre los mortales, esa deidad posó su mirada sobre una joven de presencia serena, pies imperfectamente perfectos… y una hipnosis natural que hacía que la gente se perdiera en ella sin saber por qué.",
+            "Esta es la historia de cómo una mujer común se convirtió en Pedalina, la Diosa del fetiche de pies.",
+        ],
         etiquetas: ["Orígenes", "Pedalina", "Diosa"],
         portada: "/portadas/pedalina.webp",
         linea: "principal",

@@ -72,6 +72,7 @@ function Footer() {
                             Contenido de ficción para mayores de 18 años. Todos los personajes son adultos.
                         </p>
                         <p>Imágenes generadas con IA. Las historias son obra original del autor.</p>
+                        <p>Proyecto sin ánimo de lucro: no busco ganar dinero de ninguna forma con estas historias ni con esta web.</p>
                         <p>
                             Esta web es de{" "}
                             {URL_REPOSITORIO ? (
