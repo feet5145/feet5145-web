@@ -20,7 +20,6 @@ export type Enlace =
           ayuda?: { texto: string; url: string };
       });
 
-// TODO: rellenar el ID de Session.
 export const enlaces: Enlace[] = [
     {
         tipo: "url",
@@ -73,7 +72,7 @@ export const enlaces: Enlace[] = [
         nombre: "Session",
         descripcion: "Mensajería privada que funciona con un ID. Por si Discord deja de estar disponible.",
         icono: "candado",
-        valor: "",
+        valor: "05aa2aa5167ed04ce1710ac4d0f190fe0c002248008ab98f450175517fbf847b5c",
         ayuda: { texto: "¿No conoces Session?", url: "https://getsession.org" },
     },
 ];

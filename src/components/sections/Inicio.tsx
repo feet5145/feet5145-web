@@ -59,7 +59,7 @@ function Inicio() {
 
                     <p className="mt-4 max-w-md text-base leading-relaxed text-[#eee7dc]/90 sm:text-lg">
                         Escápate del estrés diario y sumérgete en historias acogedoras, escritas para
-                        relajar la mente y alimentar la imaginación.
+                        dejarse hipnotizar por Pedalina.
                     </p>
 
                     <a

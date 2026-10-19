@@ -64,20 +64,22 @@ function PaginaPersonaje() {
                         )}
                     </header>
 
-                    <Apartado titulo="Datos básicos">
-                        <dl className="grid gap-x-6 gap-y-4 sm:grid-cols-[180px_1fr]">
-                            {personaje.datosBasicos.map((dato) => (
-                                <div key={dato.etiqueta} className="contents">
-                                    <dt className="text-sm font-medium uppercase tracking-wider text-[#d9ad63]">
-                                        {dato.etiqueta}
-                                    </dt>
-                                    <dd className="-mt-3 sm:mt-0">
-                                        <TextoFicha texto={dato.valor} />
-                                    </dd>
-                                </div>
-                            ))}
-                        </dl>
-                    </Apartado>
+                    {personaje.datosBasicos.length > 0 && (
+                        <Apartado titulo="Datos básicos">
+                            <dl className="grid gap-x-6 gap-y-4 sm:grid-cols-[180px_1fr]">
+                                {personaje.datosBasicos.map((dato) => (
+                                    <div key={dato.etiqueta} className="contents">
+                                        <dt className="text-sm font-medium uppercase tracking-wider text-[#d9ad63]">
+                                            {dato.etiqueta}
+                                        </dt>
+                                        <dd className="-mt-3 sm:mt-0">
+                                            <TextoFicha texto={dato.valor} />
+                                        </dd>
+                                    </div>
+                                ))}
+                            </dl>
+                        </Apartado>
+                    )}
 
                     {personaje.personalidad.length > 0 && (
                         <Apartado titulo="Personalidad">
