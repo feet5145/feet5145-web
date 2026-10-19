@@ -429,12 +429,22 @@ export const personajes: Personaje[] = [
         historias: ["los-deseos-de-mis-pies", "los-pies-de-mi-companera"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "19 años" },
+            { etiqueta: "Altura", valor: "1.55 m" },
             { etiqueta: "Complexión", valor: "«Un cuerpazo envidiable»" },
             { etiqueta: "Color de piel", valor: "Blanca como la nieve" },
             { etiqueta: "Color de cabello", valor: "Moreno, «un pelazo increíble»" },
-            { etiqueta: "Color de ojos", valor: "«Una mirada de ensueño», ojos que muestran pasión (no se indica el color)" },
-            { etiqueta: "Rasgos destacados", valor: "Muy amable con la gente. Tras convertirse en sucesora de Cristina, lleva en el pecho el símbolo de una silueta de pie con una espiral de hipnosis." },
-            { etiqueta: "Pies", valor: "«Unos pies de ensueño», divinos. Tenía una cicatriz en la planta del pie derecho (se cortó con un cristal), que Cristina hizo desaparecer." },
+            {
+                etiqueta: "Color de ojos",
+                valor: "«Una mirada de ensueño», ojos que muestran pasión (no se indica el color)",
+            },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "Muy amable con la gente. Tras convertirse en sucesora de Cristina, lleva en el pecho el símbolo de una silueta de pie con una espiral de hipnosis.",
+            },
+            {
+                etiqueta: "Pies",
+                valor: "«Unos pies de ensueño», divinos. Tenía una cicatriz en la planta del pie derecho (se cortó con un cristal), que Cristina hizo desaparecer.",
+            },
         ],
         personalidad: [
             "Amable y nada mala persona, pero la más cabezota del mundo cuando se trata de descalzarse: desde el corte en el pie, estar descalza le produce una inseguridad que no soporta (hasta duerme calzada).",
@@ -457,7 +467,16 @@ export const personajes: Personaje[] = [
         historias: ["los-deseos-de-mis-pies", "los-pies-de-mi-companera"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "20 años (los cumple durante la historia)" },
-            { etiqueta: "Rasgos destacados", valor: "Muy inteligente. Hábil con los pies sin necesidad de magia y con un don para los masajes." },
+            { etiqueta: "Altura", valor: "1.60 m" },
+            { etiqueta: "Complexión", valor: "Delgada" },
+            { etiqueta: "Color de piel", valor: "Blanca" },
+            { etiqueta: "Color de cabello", valor: "Corto y moreno" },
+            { etiqueta: "Color de ojos", valor: "Marrones" },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "Muy inteligente. Hábil con los pies sin necesidad de magia y con un don para los masajes.",
+            },
+            { etiqueta: "Pies", valor: "Bonitos y cuidados, de plantas suaves y dedos bien proporcionados." },
         ],
         personalidad: [
             "Tímida: si hay algo que odia tanto como Carolina odiaba ir descalza, es llamar la atención. Muy inteligente y paciente; nunca obligó a Carolina a darle sus pies y siempre le ofreció ayuda con su trauma.",
@@ -478,9 +497,12 @@ export const personajes: Personaje[] = [
         foto: "/personajes/Silvana.jpg",
         historias: ["los-deseos-de-mis-pies"],
         datosBasicos: [
+            { etiqueta: "Edad estimada", valor: "24 años" },
+            { etiqueta: "Altura", valor: "1.63 m" },
             { etiqueta: "Complexión", valor: "Delgada, igual que Cristina" },
             { etiqueta: "Color de piel", valor: "Morena, igual que Cristina" },
             { etiqueta: "Color de cabello", valor: "Bastante más corto que el de Cristina" },
+            { etiqueta: "Color de ojos", valor: "Azules" },
             { etiqueta: "Rasgos destacados", valor: "Aspecto parecido al de Cristina y un rostro igual de dulce." },
             { etiqueta: "Pies", valor: "«Unos pies de ensueño»" },
         ],
@@ -511,10 +533,15 @@ export const personajes: Personaje[] = [
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "24 años (repitió un curso)" },
             { etiqueta: "Altura", valor: "1,70 m" },
+            { etiqueta: "Complexión", valor: "Delgada, sin nada que destaque: pesa más su personalidad" },
+            { etiqueta: "Color de piel", valor: "Blanca" },
             { etiqueta: "Color de cabello", valor: "Rubio" },
             { etiqueta: "Color de ojos", valor: "Azules" },
             { etiqueta: "Rasgos destacados", valor: "Apariencia muy dulce." },
-            { etiqueta: "Pies", valor: "Preciosos, con las plantas completamente lisas y unos lindos deditos. Le sudan con el calor y desprenden un olor suave. Para una de sus tardes con Manuel se pintó las uñas de negro." },
+            {
+                etiqueta: "Pies",
+                valor: "Preciosos, con las plantas completamente lisas y unos lindos deditos. Le sudan con el calor y desprenden un olor suave. Para una de sus tardes con Manuel se pintó las uñas de negro.",
+            },
         ],
         personalidad: [
             "Muy sociable, el polo opuesto de Manuel. Los estudios le cuestan, sobre todo la teoría. Decidida y astuta («todo el mundo tiene un precio»), pero cautelosa: mide cada paso para no echar a perder su plan.",
@@ -539,16 +566,20 @@ export const personajes: Personaje[] = [
         nombre: "Manuel",
         epiteto: "El chico más temido de la universidad",
         resumen:
-            "El primero de la clase y el más temido de la universidad, con un fetiche que nunca se ha atrevido a contar. Hasta que una compañera lo descubre.",
+            "El primero de la clase y el más temido de la universidad, con un fetiche que ya no se atreve a contar. Hasta que una compañera lo descubre.",
         foto: "/personajes/Manuel.jpg",
         historias: ["los-pies-de-mi-companera"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "23 años" },
             { etiqueta: "Altura", valor: "Casi 2 metros" },
             { etiqueta: "Complexión", valor: "Musculoso: lleva años yendo al gimnasio" },
+            { etiqueta: "Color de piel", valor: "Blanco" },
             { etiqueta: "Color de cabello", valor: "Castaño" },
             { etiqueta: "Color de ojos", valor: "Marrones" },
-            { etiqueta: "Rasgos destacados", valor: "Apariencia intimidante y siempre con cara de pocos amigos. Cuando se enfada se le marcan mucho las venas." },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "Apariencia intimidante y siempre con cara de pocos amigos. Cuando se enfada se le marcan mucho las venas.",
+            },
         ],
         personalidad: [
             "Desconfiado hasta de su sombra, sarcástico y poco gentil («Haber estudiado»). Muy aplicado: el primero de su clase.",
@@ -577,6 +608,20 @@ export const personajes: Personaje[] = [
         foto: "/personajes/Natalia.jpg",
         historias: ["los-pies-de-mi-companera"],
         datosBasicos: [
+            { etiqueta: "Edad estimada", valor: "23 años, como sus compañeros de clase" },
+            { etiqueta: "Altura", valor: "1.58 m" },
+            { etiqueta: "Complexión", valor: "Menuda" },
+            { etiqueta: "Color de piel", valor: "Clara, con algunas pecas" },
+            { etiqueta: "Color de cabello", valor: "Castaño claro, por los hombros; casi siempre recogido" },
+            { etiqueta: "Color de ojos", valor: "Color miel, muy expresivos" },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "Mirada inquieta, siempre pendiente de lo que pasa a su alrededor. Se le nota enseguida cuando está preocupada.",
+            },
+            {
+                etiqueta: "Pies",
+                valor: "Pequeños y cuidados, aunque casi nunca los enseña: es de las que siempre van en zapatillas.",
+            },
         ],
         personalidad: [
             "Protectora y algo asustadiza: se preocupa mucho por Ana. También un poco cotilla; llega a espiar su conversación con Manuel.",
@@ -601,12 +646,17 @@ export const personajes: Personaje[] = [
         foto: "/personajes/Jimena.jpg",
         historias: ["los-zapatos-en-la-entrada"],
         datosBasicos: [
+            { etiqueta: "Edad estimada", valor: "Entre 20 y 25 años" },
             { etiqueta: "Altura", valor: "La más bajita del grupo" },
             { etiqueta: "Complexión", valor: "Atractivamente delgada" },
             { etiqueta: "Color de piel", valor: "Blanco casi nuclear" },
             { etiqueta: "Color de cabello", valor: "Le llega a los hombros" },
+            { etiqueta: "Color de ojos", valor: "Marrones" },
             { etiqueta: "Rasgos destacados", valor: "Usa gafas." },
-            { etiqueta: "Pies", valor: "Blanquitos y muy suaves, con las plantas rosaditas. Cristina, que suele preferir los pies morenos, no sabe explicar qué tienen." },
+            {
+                etiqueta: "Pies",
+                valor: "Blanquitos y muy suaves, con las plantas rosaditas. Cristina, que suele preferir los pies morenos, no sabe explicar qué tienen.",
+            },
         ],
         personalidad: [
             "La más aplicada del grupo: no le gusta perder el tiempo. Prudente y desconfiada. No le gustaba andar descalza ni que le tocaran los pies (tuvo un novio fetichista y solo lo permitía cuando estaba de buenas).",
@@ -636,11 +686,16 @@ export const personajes: Personaje[] = [
         foto: "/personajes/Anita.jpg",
         historias: ["los-zapatos-en-la-entrada"],
         datosBasicos: [
+            { etiqueta: "Edad estimada", valor: "Entre 20 y 25 años" },
             { etiqueta: "Altura", valor: "Estatura estándar para su edad" },
             { etiqueta: "Complexión", valor: "Buen físico" },
             { etiqueta: "Color de piel", valor: "Muy morena" },
             { etiqueta: "Color de cabello", valor: "Algo más corto que el de Jimena" },
-            { etiqueta: "Rasgos destacados", valor: "No necesita gafas. Se llama Ana, pero sus amigas la llaman «Anita»." },
+            { etiqueta: "Color de ojos", valor: "Grises" },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "No necesita gafas. Se llama Ana, pero sus amigas la llaman «Anita».",
+            },
             { etiqueta: "Pies", valor: "Morenitos y lisos." },
         ],
         personalidad: [
@@ -672,7 +727,10 @@ export const personajes: Personaje[] = [
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "La mayor del grupo; le faltan pocos años para terminar la carrera" },
             { etiqueta: "Altura", valor: "Algo más baja que Anita y más alta que Jimena" },
+            { etiqueta: "Complexión", valor: "Normal" },
             { etiqueta: "Color de piel", valor: "Morena" },
+            { etiqueta: "Color de cabello", valor: "Castaño" },
+            { etiqueta: "Color de ojos", valor: "Verdes" },
             { etiqueta: "Rasgos destacados", valor: "Tiene carnet de conducir y coche propio." },
             { etiqueta: "Pies", valor: "Ya se los habían adorado antes. Lo que de verdad le gusta es un buen masaje." },
         ],
@@ -704,9 +762,16 @@ export const personajes: Personaje[] = [
         historias: ["los-zapatos-en-la-entrada"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "La de en medio del grupo" },
+            { etiqueta: "Altura", valor: "1.62 m" },
+            { etiqueta: "Complexión", valor: "Normal, con curvas suaves" },
             { etiqueta: "Color de piel", valor: "Más morena que Jimena, pero más blanca que Anita y María" },
+            { etiqueta: "Color de cabello", valor: "Castaño oscuro, corto, a la altura de la barbilla" },
+            { etiqueta: "Color de ojos", valor: "Marrón oscuro, tras sus gafas" },
             { etiqueta: "Rasgos destacados", valor: "Usa gafas. Su plato favorito es el sukiyaki." },
-            { etiqueta: "Pies", valor: "Le gusta andar descalza. Se los habían adorado un par de veces y ha mandado muchas fotos." },
+            {
+                etiqueta: "Pies",
+                valor: "Le gusta andar descalza. Se los habían adorado un par de veces y ha mandado muchas fotos.",
+            },
         ],
         personalidad: [
             "La más abierta en cuanto a relaciones. Desconfiada y terca: se niega a entregarse a «eso» y le pide a Cristina que la deje en paz.",
@@ -738,6 +803,7 @@ export const personajes: Personaje[] = [
             { etiqueta: "Edad estimada", valor: "20 años" },
             { etiqueta: "Altura", valor: "Estatura media" },
             { etiqueta: "Complexión", valor: "Bastante delgado" },
+            { etiqueta: "Color de piel", valor: "Blanco" },
             { etiqueta: "Color de cabello", valor: "Pelirrojo" },
             { etiqueta: "Color de ojos", valor: "Verdes" },
             { etiqueta: "Rasgos destacados", valor: "Expresión bastante seria todo el tiempo. Le llaman «Nic»." },
@@ -768,11 +834,16 @@ export const personajes: Personaje[] = [
         foto: "/personajes/Naiara.jpg",
         historias: ["la-diosa-de-los-pies"],
         datosBasicos: [
+            { etiqueta: "Edad estimada", valor: "20 años, la misma que Nicolás" },
+            { etiqueta: "Altura", valor: "1.66 m" },
             { etiqueta: "Complexión", valor: "Muy delgada y atractiva" },
             { etiqueta: "Color de piel", valor: "Muy clara" },
             { etiqueta: "Color de cabello", valor: "Largo y oscuro" },
             { etiqueta: "Color de ojos", valor: "Grandes, llamativos y de un azul precioso" },
-            { etiqueta: "Rasgos destacados", valor: "En su forma de ángel viste una túnica blanca, tiene alas y un halo." },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "En su forma de ángel viste una túnica blanca, tiene alas y un halo.",
+            },
             { etiqueta: "Pies", valor: "Muy suaves, con un olor «ni muy suave ni muy fuerte, simplemente ideal»." },
         ],
         personalidad: [
@@ -795,10 +866,17 @@ export const personajes: Personaje[] = [
         nombre: "Mariluz",
         epiteto: "La promesa sin cumplir",
         resumen:
-            "Le prometió a Nicolás fotos de sus pies y un masaje, y se echó atrás. Ahora la promesa se cumple… a su manera.",
+            "Le prometió a Nicolás fotos de sus pies y un masaje, y se echó atrás. Ahora la promesa se cumple… quiera ella o no.",
         foto: "/personajes/Mariluz.jpg",
         historias: ["la-diosa-de-los-pies"],
         datosBasicos: [
+            { etiqueta: "Edad estimada", valor: "21" },
+            { etiqueta: "Altura", valor: "1.60 m" },
+            { etiqueta: "Complexión", valor: "Delgada y atractiva" },
+            { etiqueta: "Color de piel", valor: "Morena chocolate" },
+            { etiqueta: "Color de cabello", valor: "Marrón" },
+            { etiqueta: "Color de ojos", valor: "Marrones" },
+            { etiqueta: "Rasgos destacados", valor: "En su deseo por quedar bien y no parecer «la mala» acaba aceptando propuestas sin pensarlo y a veces se arrepiente." },
             { etiqueta: "Pies", valor: "Hermosos. Aunque no huelen mucho, le sudan bastante. Era extremadamente cosquillosa, hasta que Nicolás le quitó las cosquillas." },
         ],
         personalidad: [
@@ -822,11 +900,15 @@ export const personajes: Personaje[] = [
         epiteto: "La modelo gótica",
         resumen:
             "Modelo de pies, gótica y fetichista, cansada de que ningún fotógrafo quiera adorarla. Hasta que su deseo llega a oídos de Pedalina.",
-        foto: "/personajes/Lilith.jpg",
+        foto: "/personajes/Lilith.webp",
         historias: ["solo-una-foto-mas"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "22 años" },
-            { etiqueta: "Color de cabello", valor: "Largo, liso y verde oscuro" },
+            { etiqueta: "Altura", valor: "1.65 m" },
+            { etiqueta: "Complexión", valor: "Delgada, de cintura estrecha y curvas suaves" },
+            { etiqueta: "Color de piel", valor: "Muy blanca, por poco nuclear." },
+            { etiqueta: "Color de cabello", valor: "Largo, liso y verde oscuro (se tiñe)." },
+            { etiqueta: "Color de ojos", valor: "Ámbar oscuro" },
             { etiqueta: "Rasgos destacados", valor: "Maquillaje intenso de color negro, ojos delineados y labios negros. Siempre tiene una expresión tranquila con una leve sonrisa." },
             { etiqueta: "Pies", valor: "Uñas oscuras y plantas perfectamente arqueadas. Suele llevar medias, que acaban empapadas de sudor dentro de sus botas." },
         ],
@@ -855,6 +937,10 @@ export const personajes: Personaje[] = [
         foto: "/personajes/John.jpg",
         historias: ["solo-una-foto-mas"],
         datosBasicos: [
+            { etiqueta: "Edad estimada", valor: "23" },
+            { etiqueta: "Altura", valor: "1.81 m" },
+            { etiqueta: "Complexión", valor: "Chico delgado estándar" },
+            { etiqueta: "Color de piel", valor: "Blanco" },
             { etiqueta: "Color de cabello", valor: "Negro, liso y bien cortado, con un flequillo que le enmarca el rostro" },
             { etiqueta: "Color de ojos", valor: "Claros, de mirada intensa y seria" },
             { etiqueta: "Rasgos destacados", valor: "Apariencia juvenil, con rasgos finos y simétricos. Expresión tranquila, casi impasible." },
@@ -904,9 +990,17 @@ export const personajes: Personaje[] = [
             { etiqueta: "Edad estimada", valor: "Aparenta una edad similar a la de Jorge (26 años)" },
             { etiqueta: "Altura", valor: "Bastante alta" },
             { etiqueta: "Complexión", valor: "Considerablemente delgada" },
+            { etiqueta: "Color de piel", valor: "Blanca" },
             { etiqueta: "Color de cabello", valor: "Rubio" },
             { etiqueta: "Color de ojos", valor: "El iris se vuelve completamente rojo cuando usa su magia" },
-            { etiqueta: "Pies", valor: "Suele llevar medias negras empapadas en sudor, con un olor fuerte que puede potenciar con sus pociones." },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "Sonrisa sádica cuando tiene a alguien a su merced. Mirada afilada que se tiñe de rojo al usar su magia. Usa un pintalabios negro hechizado.",
+            },
+            {
+                etiqueta: "Pies",
+                valor: "Suele llevar medias negras empapadas en sudor, con un olor fuerte que puede potenciar con sus pociones.",
+            },
         ],
         personalidad: [
             "Sádica y dominante, de las que dejan todo para el último momento. Celebra como una niña cuando algo le sale bien.",
@@ -937,8 +1031,13 @@ export const personajes: Personaje[] = [
             { etiqueta: "Edad estimada", valor: "26 años" },
             { etiqueta: "Altura", valor: "Alto" },
             { etiqueta: "Complexión", valor: "Bastante musculoso" },
+            { etiqueta: "Color de piel", valor: "Blanco" },
             { etiqueta: "Color de cabello", valor: "Moreno" },
-            { etiqueta: "Rasgos destacados", valor: "Fuerza descomunal cuando se enfada: rompe cadenas y vence a una bruja sin magia." },
+            { etiqueta: "Color de ojos", valor: "Marrones" },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "Fuerza descomunal cuando se enfada: rompe cadenas y vence a una bruja sin magia.",
+            },
         ],
         personalidad: [
             "Muy amable, con fama de filántropo allá donde vive. Sarcástico incluso en los peores momentos, y buen cocinero.",
@@ -967,9 +1066,16 @@ export const personajes: Personaje[] = [
         historias: ["a-los-pies-de-la-bruja"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "La misma que Manuela" },
+            { etiqueta: "Altura", valor: "1.62 m" },
+            { etiqueta: "Complexión", valor: "Normal, sin las curvas de Manuela" },
+            { etiqueta: "Color de piel", valor: "Clara, con pecas" },
             { etiqueta: "Color de cabello", valor: "Pelirrojo" },
             { etiqueta: "Color de ojos", valor: "Azules" },
             { etiqueta: "Rasgos destacados", valor: "Su cuerpo «no es tan envidiable» como el de Manuela." },
+            {
+                etiqueta: "Pies",
+                valor: "Normales, sin nada especial. Nunca ha entendido qué ve nadie en unos pies, y menos en los de Manuela.",
+            },
         ],
         personalidad: [
             "Envidiosa, extremadamente cabezona e insistente. Nunca ha soportado que a Manuela le vaya algo bien.",
@@ -995,10 +1101,16 @@ export const personajes: Personaje[] = [
         foto: "/personajes/Gwen.jpg",
         historias: ["a-los-pies-de-spider-gwen"],
         datosBasicos: [
+            { etiqueta: "Edad estimada", valor: " 23 años" },
+            { etiqueta: "Altura", valor: "1.65 m" },
             { etiqueta: "Complexión", valor: "Bastante delgada" },
             { etiqueta: "Color de piel", valor: "Pálida" },
             { etiqueta: "Color de cabello", valor: "Rubio, con flequillo" },
-            { etiqueta: "Rasgos destacados", valor: "Mirada seria, parcialmente escondida por el flequillo. De noche patrulla como Spider-Woman, con un traje rosa y blanco." },
+            { etiqueta: "Color de ojos", valor: "Azules" },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "Mirada seria, parcialmente escondida por el flequillo. De noche patrulla como Spider-Woman, con un traje rosa y blanco.",
+            },
             { etiqueta: "Pies", valor: "Le encanta estar descalza. Puede adherirse con ellos y es muy cosquillosa." },
         ],
         personalidad: [
@@ -1027,6 +1139,12 @@ export const personajes: Personaje[] = [
         foto: "/personajes/Leo.jpg",
         historias: ["a-los-pies-de-spider-gwen"],
         datosBasicos: [
+            { etiqueta: "Edad estimada", valor: "19 años, recién llegado a la universidad" },
+            { etiqueta: "Altura", valor: "Media, unos 1.75 m" },
+            { etiqueta: "Complexión", valor: "Universitario promedio, delgado" },
+            { etiqueta: "Color de piel", valor: "Clara" },
+            { etiqueta: "Color de cabello", valor: "Castaño muy oscuro, rizado y siempre despeinado" },
+            { etiqueta: "Color de ojos", valor: "Marrones" },
             { etiqueta: "Rasgos destacados", valor: "Siempre lleva encima una pluma… para las cosquillas." },
         ],
         personalidad: [
