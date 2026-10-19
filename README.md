@@ -25,19 +25,25 @@ Este proyecto es de **código abierto**. El objetivo es crear un espacio propio,
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/TU_USUARIO/feet5145-web.git
+git clone https://github.com/feet5145/feet5145-web.git
 
 # Entrar en la carpeta
 cd feet5145-web
 
-# Instalar dependencias
-npm install
+# Instalar dependencias (el proyecto usa pnpm)
+pnpm install
 
 # Ejecutar en modo desarrollo
-npm run dev
+pnpm dev
 
 # Construir para producción
-npm run build
+pnpm build
+
+# Ver la versión de producción tal como quedará publicada
+pnpm preview
+
+# Optimizar las imágenes nuevas de public/ (necesita Python 3 con Pillow)
+pnpm imagenes
 ```
 
 ### Aviso sobre Inteligencia Artificial
