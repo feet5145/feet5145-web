@@ -56,7 +56,12 @@ function PaginaPersonaje() {
                 {/* FOTO */}
                 <div className="lg:sticky lg:top-24 lg:self-start">
                     <div
-                        className="aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl border border-[#d9ad63]/40 bg-[#1a120b] bg-cover bg-top shadow-2xl shadow-black/40 lg:max-w-none"
+                        className={`aspect-[3/4] w-full max-w-sm overflow-hidden rounded-2xl border border-[#d9ad63]/40 bg-[#1a120b] bg-cover bg-top shadow-2xl shadow-black/40 lg:max-w-none ${
+                            // Solo la Diosa: su retrato «respira» con un halo dorado
+                            personaje.id === "pedalina"
+                                ? "motion-safe:animate-respirar motion-reduce:shadow-[0_0_40px_rgba(237,197,119,0.35)]"
+                                : ""
+                        }`}
                         style={{
                             backgroundImage: `url("${rutaPublica(personaje.foto)}"), radial-gradient(ellipse at 50% 35%, #4a321c 0%, #1a120b 70%)`,
                         }}

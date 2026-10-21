@@ -800,7 +800,7 @@ export const personajes: Personaje[] = [
         epiteto: "La favorita de Cristina",
         resumen:
             "La más aplicada del grupo, a la que no le gustaba ir descalza. Acepta un trato con Cristina para salvar a su madre, huye… y vuelve por voluntad propia.",
-        foto: "/personajes/Jimena.jpg",
+        foto: "/personajes/Jimena.webp",
         historias: ["los-zapatos-en-la-entrada"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "Entre 20 y 25 años" },
@@ -840,7 +840,7 @@ export const personajes: Personaje[] = [
         epiteto: "La que soñaba con ser adorada",
         resumen:
             "Adoraba ir descalza, pero nadie quería probar sus pies. Un beso de Jimena la deja bajo su control… y, al final, por fin la adoran a ella.",
-        foto: "/personajes/Anita.jpg",
+        foto: "/personajes/Anita.webp",
         historias: ["los-zapatos-en-la-entrada"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "Entre 20 y 25 años" },
@@ -915,7 +915,7 @@ export const personajes: Personaje[] = [
         epiteto: "La última en rendirse",
         resumen:
             "La que propuso la excursión y la única que se negó a entregarse a Cristina… hasta que un plato de sukiyaki y un poco de cariño la hicieron rendirse.",
-        foto: "/personajes/Laura.jpg",
+        foto: "/personajes/Laura.webp",
         historias: ["los-zapatos-en-la-entrada"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "La de en medio del grupo" },
@@ -1182,7 +1182,7 @@ export const personajes: Personaje[] = [
         epiteto: "El esclavo a domicilio",
         resumen:
             "El chico más amable del barrio dejó que una desconocida se durmiera en su hombro. Así empezó todo.",
-        foto: "/personajes/Jorge.jpg",
+        foto: "/personajes/Jorge.webp",
         historias: ["a-los-pies-de-la-bruja"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "26 años" },
@@ -1219,7 +1219,7 @@ export const personajes: Personaje[] = [
         epiteto: "La bruja envidiosa",
         resumen:
             "La compañera de clase de Manuela, que no soporta que le vaya bien. Su insistencia la lleva hasta la casa de Manuela… y hasta los puños de Jorge.",
-        foto: "/personajes/Sofía.jpg",
+        foto: "/personajes/Sofia.webp",
         historias: ["a-los-pies-de-la-bruja"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "La misma que Manuela" },

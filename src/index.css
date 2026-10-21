@@ -5,10 +5,24 @@
 
     /* Huella de la portada: la espiral gira sin parar */
     --animate-girar: girar 6s linear infinite;
+    /* Retrato de Pedalina: un halo dorado que se enciende y se apaga despacio */
+    --animate-respirar: respirar 8s ease-in-out infinite;
 
     @keyframes girar {
         to {
             transform: rotate(-360deg);
+        }
+    }
+
+    @keyframes respirar {
+        0%,
+        100% {
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+        }
+        50% {
+            box-shadow:
+                0 25px 50px -12px rgb(0 0 0 / 0.4),
+                0 0 45px 8px rgb(237 197 119 / 0.45);
         }
     }
 }
