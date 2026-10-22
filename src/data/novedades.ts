@@ -7,6 +7,11 @@ export type Novedad = {
 
 export const novedades: Novedad[] = [
     {
+        fecha: "2026-10-22",
+        titulo: "Pequeña corrección en «La Diosa de los pies»",
+        texto: "Si os ha llegado un aviso de capítulo republicado, no os preocupéis: no hay capítulo nuevo. He corregido una descripción para que Pedalina sea morena en todas las historias.",
+    },
+    {
         fecha: "2026-10-19",
         titulo: "Nuevo capítulo de «Barefoot Café» publicado",
         texto: "Ya podéis leer en Inkitt y Wattpad el nuevo capítulo de «Barefoot Café». ¡Pasad, descalzaos y poneos cómodos!",
