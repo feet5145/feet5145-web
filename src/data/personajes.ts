@@ -879,7 +879,7 @@ export const personajes: Personaje[] = [
         epiteto: "La que solo quería un buen masaje",
         resumen:
             "La mayor y la más sensata del grupo. Solo pedía un buen masaje de pies; lo que recibió fue a Cristina viviendo en su piso.",
-        foto: "/personajes/María.jpg",
+        foto: "/personajes/Maria.webp",
         historias: ["los-zapatos-en-la-entrada"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "La mayor del grupo; le faltan pocos años para terminar la carrera" },
