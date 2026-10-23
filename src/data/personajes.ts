@@ -45,7 +45,7 @@ export const personajes: Personaje[] = [
                 etiqueta: "Edad estimada",
                 valor: "Desconocida (Diosa inmortal), pero aparenta ser una chica joven de unos 25 años",
             },
-            { etiqueta: "Altura", valor: "1,72 m (media-alta)" },
+            { etiqueta: "Altura", valor: "1.72 m (media-alta)" },
             { etiqueta: "Complexión", valor: "Esbelta, elegante y muy femenina. Movimientos gráciles y pausados." },
             { etiqueta: "Color de piel", valor: "Morena cálida" },
             {
@@ -134,7 +134,7 @@ export const personajes: Personaje[] = [
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "20 años" },
             { etiqueta: "Otra edad", valor: "En «Los zapatos en la entrada» (línea alternativa) aparenta la misma edad que las chicas, de entre 20 y 25 años, y la historia abarca varios años" },
-            { etiqueta: "Altura", valor: "1,68 – 1,70 m" },
+            { etiqueta: "Altura", valor: "1.68 – 1.70 m" },
             { etiqueta: "Complexión", valor: "Delgada, esbelta y con curvas suaves" },
             { etiqueta: "Color de piel", valor: "Morena / bronceada clara" },
             { etiqueta: "Color de cabello", valor: "Castaño oscuro, largo y liso (parecido al de Carolina)" },
@@ -689,7 +689,7 @@ export const personajes: Personaje[] = [
         historias: ["los-pies-de-mi-companera"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "24 años (repitió un curso)" },
-            { etiqueta: "Altura", valor: "1,70 m" },
+            { etiqueta: "Altura", valor: "1.70 m" },
             { etiqueta: "Complexión", valor: "Delgada, sin nada que destaque: pesa más su personalidad" },
             { etiqueta: "Color de piel", valor: "Blanca" },
             { etiqueta: "Color de cabello", valor: "Rubio" },
@@ -954,7 +954,7 @@ export const personajes: Personaje[] = [
         epiteto: "El siervo leal de Pedalina",
         resumen:
             "Objetivo de burlas por un fetiche que confió a la persona equivocada. Su lealtad a los pies llamó la atención de una Diosa y de su ángel de la guarda.",
-        foto: "/personajes/Nicolás.jpg",
+        foto: "/personajes/Nicolas.webp",
         historias: ["la-diosa-de-los-pies"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "20 años" },
@@ -988,7 +988,7 @@ export const personajes: Personaje[] = [
         epiteto: "El ángel de la guarda",
         resumen:
             "El ángel de la guarda que Pedalina creó para Nicolás. Lo observó durante años, lo llevó ante su Diosa… y acabó enamorándose de él.",
-        foto: "/personajes/Naiara.jpg",
+        foto: "/personajes/Naiara.webp",
         historias: ["la-diosa-de-los-pies"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "20 años, la misma que Nicolás" },
@@ -1024,7 +1024,7 @@ export const personajes: Personaje[] = [
         epiteto: "La promesa sin cumplir",
         resumen:
             "Le prometió a Nicolás fotos de sus pies y un masaje, y se echó atrás. Ahora la promesa se cumple… quiera ella o no.",
-        foto: "/personajes/Mariluz.jpg",
+        foto: "/personajes/Mariluz.webp",
         historias: ["la-diosa-de-los-pies"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "21" },
@@ -1120,9 +1120,34 @@ export const personajes: Personaje[] = [
             "Vela por Lilith desde el reino de Pedalina, aunque ella ni siquiera sabe que existe. Pronto se conocerán.",
         foto: "/personajes/Ainoa.jpg",
         historias: ["solo-una-foto-mas"],
-        datosBasicos: [],
+        datosBasicos: [
+            {
+                etiqueta: "Edad estimada",
+                valor: "Aparenta unos 23 años. Pedalina la creó cuando le asignaron a Lilith como súbdita, así que lleva años velando por ella",
+            },
+            { etiqueta: "Altura", valor: "1.68 m" },
+            { etiqueta: "Complexión", valor: "Esbelta y ligera; al caminar parece que apenas toca el suelo" },
+            {
+                etiqueta: "Color de piel",
+                valor: "Muy clara, con un brillo suave y cálido, como si la iluminara una vela",
+            },
+            {
+                etiqueta: "Color de cabello",
+                valor: "Blanco plateado, largo y liso, casi siempre recogido con descuido",
+            },
+            { etiqueta: "Color de ojos", valor: "Gris perla, tranquilos y atentos" },
+            {
+                etiqueta: "Rasgos destacados",
+                valor: "En su forma de ángel desprende una luz blanca cegadora, viste una túnica blanca y tiene alas y halo. En forma humana viste de blanco y colores claros: el contraste perfecto con la gótica a la que protege.",
+            },
+            {
+                etiqueta: "Pies",
+                valor: "Pálidos, suaves y siempre descalzos, como corresponde a un ángel creado por Pedalina. Sus plantas, de un rosado delicado, conservan un leve aroma a flores del paraíso de la Diosa.",
+            },
+        ],
         personalidad: [
             "Práctica y directa: cuando Pedalina le pide consejo, se lo piensa unos segundos y propone la solución más sencilla.",
+            "Observadora y paciente: lleva años viendo de cerca la vida de Lilith, incluido el día en que su familia la echó de casa, sin poder intervenir por las órdenes de no alterar el orden. Bajo su aire seco hay muchísimo cariño por su protegida.",
         ],
         rol: [
             "Pedalina la llama para preguntarle cómo aparecerse ante Lilith sin asustarla. Ainoa le sugiere escribirle un mensaje diciendo que su jefe le ha dado su contacto.",
