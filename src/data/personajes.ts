@@ -1118,7 +1118,7 @@ export const personajes: Personaje[] = [
         epiteto: "El ángel de la guarda de Lilith",
         resumen:
             "Vela por Lilith desde el reino de Pedalina, aunque ella ni siquiera sabe que existe. Pronto se conocerán.",
-        foto: "/personajes/Ainoa.jpg",
+        foto: "/personajes/Ainoa.webp",
         historias: ["solo-una-foto-mas"],
         datosBasicos: [
             {
