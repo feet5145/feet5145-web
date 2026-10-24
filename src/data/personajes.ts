@@ -724,7 +724,7 @@ export const personajes: Personaje[] = [
         epiteto: "El chico más temido de la universidad",
         resumen:
             "El primero de la clase y el más temido de la universidad, con un fetiche que ya no se atreve a contar. Hasta que una compañera lo descubre.",
-        foto: "/personajes/Manuel.jpg",
+        foto: "/personajes/Manuel.webp",
         historias: ["los-pies-de-mi-companera"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "23 años" },
