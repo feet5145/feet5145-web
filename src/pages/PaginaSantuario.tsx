@@ -14,6 +14,8 @@ import {
     botonVolver,
     cuenta,
     despedida,
+    despedidaPuchero,
+    firmaPuchero,
     minutosQuietud,
     premioQuietud,
 } from "../data/santuario";
@@ -98,10 +100,12 @@ function Trance({ alDespertar }: { alDespertar: () => void }) {
 }
 
 // Tras el chasquido: un destello y la despedida de Pedalina.
-function Despertar() {
+// Si el visitante se ha escapado con Esc, en su lugar hace un puchero.
+function Despertar({ escapado }: { escapado: boolean }) {
+    const lineas = escapado ? despedidaPuchero : despedida;
     return (
         <div className="flex max-w-xl flex-col items-center gap-6 text-center">
-            {despedida.map((linea, indice) => (
+            {lineas.map((linea, indice) => (
                 <p
                     key={linea}
                     className="font-serif text-2xl italic leading-relaxed text-[#f5eee2] [text-shadow:0_0_14px_#0b0705,0_0_4px_#0b0705] motion-safe:animate-aparecer sm:text-3xl"
@@ -112,14 +116,14 @@ function Despertar() {
             ))}
             <p
                 className="text-sm font-medium uppercase tracking-[0.2em] text-[#d9ad63] motion-safe:animate-aparecer"
-                style={{ animationDelay: `${0.8 + despedida.length * 2}s` }}
+                style={{ animationDelay: `${0.8 + lineas.length * 2}s` }}
             >
-                — Pedalina
+                {escapado ? firmaPuchero : "— Pedalina"}
             </p>
             <Link
                 to="/"
                 className={`mt-4 motion-safe:animate-aparecer ${claseBoton}`}
-                style={{ animationDelay: `${1.6 + despedida.length * 2}s` }}
+                style={{ animationDelay: `${1.6 + lineas.length * 2}s` }}
             >
                 {botonVolver}
             </Link>
@@ -134,15 +138,19 @@ function PaginaSantuario() {
     const menosMovimiento = usePrefiereMenosMovimiento();
     const [fase, setFase] = useState<Fase>("umbral");
     const [quieto, setQuieto] = useState(false);
+    const [escapado, setEscapado] = useState(false);
 
-    // Escape despierta a cualquiera, esté donde esté.
+    // Escape despierta a cualquiera, esté donde esté… aunque a Pedalina no le hace gracia.
     useEffect(() => {
+        if (fase === "despertar") return;
         function alPulsarTecla(evento: KeyboardEvent) {
-            if (evento.key === "Escape") setFase("despertar");
+            if (evento.key !== "Escape") return;
+            setEscapado(true);
+            setFase("despertar");
         }
         window.addEventListener("keydown", alPulsarTecla);
         return () => window.removeEventListener("keydown", alPulsarTecla);
-    }, []);
+    }, [fase]);
 
     // El secreto del secreto: un mensaje para quien se queda un buen rato sin tocar nada.
     useEffect(() => {
@@ -186,7 +194,7 @@ function PaginaSantuario() {
                 {fase === "umbral" && <Umbral alEntrar={() => setFase("bienvenida")} />}
                 {fase === "bienvenida" && <Bienvenida alSeguir={() => setFase("trance")} />}
                 {fase === "trance" && <Trance alDespertar={() => setFase("despertar")} />}
-                {fase === "despertar" && <Despertar />}
+                {fase === "despertar" && <Despertar escapado={escapado} />}
             </div>
 
             {quieto && conEspiral && (
@@ -195,8 +203,8 @@ function PaginaSantuario() {
                 </p>
             )}
 
-            {/* El chasquido: un destello dorado que se apaga */}
-            {fase === "despertar" && (
+            {/* El chasquido: un destello dorado que se apaga (quien se escapa no se lo gana) */}
+            {fase === "despertar" && !escapado && (
                 <div className="pointer-events-none absolute inset-0 z-30 bg-[#f5eee2] opacity-0 motion-safe:animate-destello" />
             )}
         </div>

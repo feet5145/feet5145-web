@@ -40,6 +40,14 @@ export const despedida = [
     "Vuelve cuando lo necesites. Mis pies no se mueven de aquí.",
 ];
 
+// Si alguien se escapa con la tecla Esc, en vez de la despedida Pedalina hace un puchero.
+export const despedidaPuchero = [
+    "¿Ya te vas…? ¿Así, sin más?",
+    "Hmpf… y yo moviendo los deditos solo para ti.",
+    "Vale, vete… pero que sepas que mis pies se han quedado con las ganas.",
+];
+export const firmaPuchero = "— Pedalina, haciendo un puchero";
+
 export const botonVolver = "Volver a la web";
 
 // Frases de las historias que aparecen y se desvanecen en los bordes de la pantalla.
