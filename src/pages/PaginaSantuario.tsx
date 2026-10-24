@@ -177,8 +177,10 @@ function PaginaSantuario() {
             <AvisoEdad />
             <TituloAusente />
 
-            {/* Fondo: un resplandor cálido y, detrás del texto, la espiral */}
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,#2a1a10_0%,#0b0705_70%)]" />
+            {/* Fondo: un resplandor cálido y, detrás del texto, la espiral. Al llegar desde la portada,
+                la espiral de entrada se disuelve en este mismo color oscuro y el resplandor se enciende
+                poco a poco, para que no haya corte. */}
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,#2a1a10_0%,#0b0705_70%)] motion-safe:animate-[oscurecer_2.5s_ease-out_both]" />
             {conEspiral && (
                 <EspiralSantuario
                     className={`absolute left-1/2 top-1/2 -z-10 w-[min(110vmin,820px)] -translate-x-1/2 -translate-y-1/2 transition-opacity duration-[3000ms] ${

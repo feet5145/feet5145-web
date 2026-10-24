@@ -80,7 +80,7 @@ function PuertaSantuario({ children }: { children: ReactNode }) {
             {/* Fuera de la portada (en el body), para quedar por encima de la cabecera */}
             {entrando &&
                 createPortal(
-                    <div className="fixed inset-0 z-[90] grid place-items-center overflow-hidden bg-[#100b07] motion-safe:animate-oscurecer">
+                    <div className="fixed inset-0 z-[90] grid place-items-center overflow-hidden bg-[#0b0705] motion-safe:animate-oscurecer">
                         <div className="animate-tragar" onAnimationEnd={() => navegar("/santuario")}>
                             <EspiralSantuario className="relative w-[80vmin]" />
                         </div>
