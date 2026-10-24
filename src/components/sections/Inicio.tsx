@@ -1,4 +1,5 @@
 import { rutaPublica } from "../../utils/rutaPublica";
+import PuertaSantuario from "../santuario/PuertaSantuario";
 import Huella from "../ui/Huella";
 
 // Imagen de fondo: colócala en public/fondos/inicio.jpg.
@@ -51,9 +52,12 @@ function Inicio() {
                 {/* IZQUIERDA: TÍTULO Y PRESENTACIÓN */}
                 <div className="max-w-xl">
                     {/* MONOGRAMA */}
-                    {/* Detalle escondido: al pasar el ratón por encima aparece el mensaje del title */}
+                    {/* Detalles escondidos: al pasar el ratón por encima aparece el mensaje del title,
+                        y al mantenerla pulsada se entra al santuario */}
                     <span title="Mira la espiral fijamente… sin parpadear…" className="mb-6 inline-block">
-                        <Huella className="h-16 w-auto text-[#d9ad63] drop-shadow-[0_0_14px_rgba(237,197,119,0.55)] transition-colors duration-700 hover:text-[#edc577] sm:h-20" />
+                        <PuertaSantuario>
+                            <Huella className="h-16 w-auto text-[#d9ad63] drop-shadow-[0_0_14px_rgba(237,197,119,0.55)] transition-colors duration-700 hover:text-[#edc577] sm:h-20" />
+                        </PuertaSantuario>
                     </span>
 
                     <h1 className="font-serif text-6xl font-semibold leading-none tracking-tight text-[#f5eee2] sm:text-7xl md:text-8xl">

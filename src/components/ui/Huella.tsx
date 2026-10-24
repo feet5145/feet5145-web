@@ -1,4 +1,5 @@
 import { useId } from "react";
+import { DEDOS_PIE, PLANTA_PIE, VIEWBOX_PIE } from "../../utils/formaPie";
 
 // Planta de un pie con una espiral hipnótica: la misma forma que el favicon (public/favicon.svg).
 // La espiral está recortada, así que deja ver lo que haya detrás, y gira sin parar
@@ -7,7 +8,7 @@ function Huella({ className = "" }: { className?: string }) {
     const idMascara = useId();
 
     return (
-        <svg viewBox="16 5 34 56" fill="currentColor" className={className} aria-hidden="true">
+        <svg viewBox={VIEWBOX_PIE} fill="currentColor" className={className} aria-hidden="true">
             <mask id={idMascara}>
                 <rect x="16" y="5" width="34" height="56" fill="white" />
                 <path
@@ -22,12 +23,10 @@ function Huella({ className = "" }: { className?: string }) {
                 />
             </mask>
             <g mask={`url(#${idMascara})`}>
-                <path d="M31 60C23 60 21 55.5 22.5 50.5C24 45.5 25 42 21.5 36C19.5 33 18.5 31 18.5 29C17.5 22 23 18 31 18.5C40 19 46.5 22.5 45.5 30C44.5 36 42 41 41.5 48C41.5 56 38 60 31 60Z" />
-                <circle cx="25" cy="12.5" r="4.6" />
-                <circle cx="33" cy="10.8" r="3.4" />
-                <circle cx="39" cy="12.4" r="3.0" />
-                <circle cx="43.6" cy="15.6" r="2.6" />
-                <circle cx="47.2" cy="19.8" r="2.2" />
+                <path d={PLANTA_PIE} />
+                {DEDOS_PIE.map((dedo) => (
+                    <circle key={dedo.cx} {...dedo} />
+                ))}
             </g>
         </svg>
     );
