@@ -7,10 +7,13 @@ import PaginaPersonajes from "./pages/PaginaPersonajes";
 import PaginaPersonaje from "./pages/PaginaPersonaje";
 import PaginaNovedades from "./pages/PaginaNovedades";
 import PaginaNoEncontrada from "./pages/PaginaNoEncontrada";
+import PaginaSantuario from "./pages/PaginaSantuario";
 
 function App() {
     return (
         <Routes>
+            {/* Página secreta, a pantalla completa: sin cabecera ni pie */}
+            <Route path="santuario" element={<PaginaSantuario />} />
             <Route element={<Layout />}>
                 <Route index element={<PaginaPrincipal />} />
                 <Route path="historias" element={<PaginaHistorias />} />
