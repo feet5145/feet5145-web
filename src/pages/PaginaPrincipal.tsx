@@ -1,4 +1,5 @@
 import Enlaces from "../components/sections/Enlaces";
+import Guinos from "../components/sections/Guinos";
 import Historias from "../components/sections/Historias";
 import Inicio from "../components/sections/Inicio";
 import Novedades from "../components/sections/Novedades";
@@ -15,6 +16,7 @@ function PaginaPrincipal() {
             <Personajes />
             <Novedades />
             <Enlaces />
+            <Guinos />
         </>
     );
 }

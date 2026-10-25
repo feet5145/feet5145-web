@@ -1,24 +1,45 @@
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import type { ReactNode } from "react";
+import type { PointerEvent, ReactNode } from "react";
 import { useNavigate } from "react-router";
 import { usePrefiereMenosMovimiento } from "../../hooks/usePrefiereMenosMovimiento";
+import { descubrirGuino } from "../../utils/guinos";
 import EspiralSantuario from "./EspiralSantuario";
 
 // Cuánto hay que mantener pulsada la huella para entrar.
 const DURACION_MS = 1500;
+// Cuánto hay que dejar el ratón encima, sin pulsar, para el guiño de la mirada fija.
+const MIRADA_MS = 2500;
 
 // Detalle escondido: al mantener pulsado su contenido (la huella de la portada) se llena
 // un anillo dorado; si se completa, una espiral crece hasta llenar la pantalla y lleva
 // al santuario. Si se suelta antes, el anillo se vacía.
+// Dejar el ratón encima un rato (sin pulsar) desbloquea el guiño de la mirada fija.
 function PuertaSantuario({ children }: { children: ReactNode }) {
     const navegar = useNavigate();
     const menosMovimiento = usePrefiereMenosMovimiento();
     const [pulsando, setPulsando] = useState(false);
     const [entrando, setEntrando] = useState(false);
     const temporizador = useRef<number | undefined>(undefined);
+    const mirada = useRef<number | undefined>(undefined);
 
-    useEffect(() => () => window.clearTimeout(temporizador.current), []);
+    useEffect(
+        () => () => {
+            window.clearTimeout(temporizador.current);
+            window.clearTimeout(mirada.current);
+        },
+        [],
+    );
+
+    function empezarMirada(evento: PointerEvent<HTMLSpanElement>) {
+        if (evento.pointerType !== "mouse") return;
+        mirada.current = window.setTimeout(() => descubrirGuino("mirada"), MIRADA_MS);
+    }
+
+    function dejarDeMirar() {
+        window.clearTimeout(mirada.current);
+        soltar();
+    }
 
     function empezar() {
         if (entrando) return;
@@ -44,7 +65,8 @@ function PuertaSantuario({ children }: { children: ReactNode }) {
             <span
                 onPointerDown={empezar}
                 onPointerUp={soltar}
-                onPointerLeave={soltar}
+                onPointerEnter={empezarMirada}
+                onPointerLeave={dejarDeMirar}
                 onPointerCancel={soltar}
                 onContextMenu={(evento) => evento.preventDefault()}
                 className="relative inline-grid cursor-pointer select-none place-items-center [-webkit-touch-callout:none]"

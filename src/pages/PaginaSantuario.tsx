@@ -7,6 +7,7 @@ import PlantasPedalina from "../components/santuario/PlantasPedalina";
 import RastroHuellas from "../components/santuario/RastroHuellas";
 import Susurros from "../components/santuario/Susurros";
 import Umbral from "../components/santuario/Umbral";
+import AvisoGuino from "../components/ui/AvisoGuino";
 import {
     bienvenida,
     botonDespertar,
@@ -21,6 +22,7 @@ import {
 } from "../data/santuario";
 import { usePrefiereMenosMovimiento } from "../hooks/usePrefiereMenosMovimiento";
 import { useTituloPagina } from "../hooks/useTituloPagina";
+import { descubrirGuino } from "../utils/guinos";
 
 type Fase = "umbral" | "bienvenida" | "trance" | "despertar";
 
@@ -63,7 +65,11 @@ function Trance({ alDespertar }: { alDespertar: () => void }) {
 
     useEffect(() => {
         if (terminado) return;
-        const temporizador = window.setTimeout(() => setPaso((actual) => actual + 1), PASO_CUENTA_MS);
+        const temporizador = window.setTimeout(() => {
+            // Al llegar al último dedo, el visitante ya está hipnotizado (guiño)
+            if (paso + 1 === cuenta.dedos.length) descubrirGuino("hipnosis");
+            setPaso((actual) => actual + 1);
+        }, PASO_CUENTA_MS);
         return () => window.clearTimeout(temporizador);
     }, [paso, terminado]);
 
@@ -141,11 +147,15 @@ function PaginaSantuario() {
     const [quieto, setQuieto] = useState(false);
     const [escapado, setEscapado] = useState(false);
 
+    // Guiño: haber llegado hasta aquí
+    useEffect(() => descubrirGuino("santuario"), []);
+
     // Escape despierta a cualquiera, esté donde esté… aunque a Pedalina no le hace gracia.
     useEffect(() => {
         if (fase === "despertar") return;
         function alPulsarTecla(evento: KeyboardEvent) {
             if (evento.key !== "Escape") return;
+            descubrirGuino("puchero");
             setEscapado(true);
             setFase("despertar");
         }
@@ -160,7 +170,10 @@ function PaginaSantuario() {
         function reiniciar() {
             window.clearTimeout(temporizador);
             setQuieto(false);
-            temporizador = window.setTimeout(() => setQuieto(true), minutosQuietud * 60_000);
+            temporizador = window.setTimeout(() => {
+                descubrirGuino("quietud");
+                setQuieto(true);
+            }, minutosQuietud * 60_000);
         }
         reiniciar();
         const eventos = ["pointermove", "pointerdown", "keydown"] as const;
@@ -176,6 +189,7 @@ function PaginaSantuario() {
     return (
         <div className="relative isolate flex min-h-dvh items-center justify-center overflow-hidden bg-[#0b0705] px-5 py-16">
             <AvisoEdad />
+            <AvisoGuino />
             <TituloAusente />
 
             {/* Fondo: un resplandor cálido y, detrás del texto, la espiral. Al llegar desde la portada,
@@ -198,9 +212,19 @@ function PaginaSantuario() {
             {!menosMovimiento && <RastroHuellas />}
 
             <div className="relative z-20">
-                {fase === "umbral" && <Umbral alEntrar={() => setFase("bienvenida")} />}
+                {fase === "umbral" && <Umbral
+                        alEntrar={() => {
+                            descubrirGuino("descalzo");
+                            setFase("bienvenida");
+                        }}
+                    />}
                 {fase === "bienvenida" && <Bienvenida alSeguir={() => setFase("trance")} />}
-                {fase === "trance" && <Trance alDespertar={() => setFase("despertar")} />}
+                {fase === "trance" && <Trance
+                        alDespertar={() => {
+                            descubrirGuino("chasquido");
+                            setFase("despertar");
+                        }}
+                    />}
                 {fase === "despertar" && <Despertar escapado={escapado} />}
             </div>
 
