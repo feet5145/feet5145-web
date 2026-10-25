@@ -1,4 +1,5 @@
 import { Outlet } from "react-router";
+import AvisoGuino from "../ui/AvisoGuino";
 import AvisoEdad from "./AvisoEdad";
 import Footer from "./Footer";
 import GestorDesplazamiento from "./GestorDesplazamiento";
@@ -12,6 +13,7 @@ function Layout() {
             <GestorDesplazamiento />
             <AvisoEdad />
             <TituloAusente />
+            <AvisoGuino />
 
             <Header />
 

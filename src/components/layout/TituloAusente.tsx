@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { descubrirGuino } from "../../utils/guinos";
 
 const TITULO_AUSENTE = "Vuelve... Pedalina quiere mimarte";
 
@@ -13,6 +14,8 @@ function TituloAusente() {
                 document.title = TITULO_AUSENTE;
             } else if (document.title === TITULO_AUSENTE) {
                 document.title = tituloOriginal;
+                // Guiño: volver cuando Pedalina te llamaba
+                descubrirGuino("ausencia");
             }
         }
 

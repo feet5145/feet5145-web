@@ -1,5 +1,7 @@
+import { useEffect } from "react";
 import { Link } from "react-router";
 import { useTituloPagina } from "../hooks/useTituloPagina";
+import { descubrirGuino } from "../utils/guinos";
 import { rutaPublica } from "../utils/rutaPublica";
 
 // Pedalina, descalza, sentada en un pasillo vacío. Mientras la imagen no exista, se ve solo el degradado.
@@ -17,6 +19,8 @@ const fondo = `url("${rutaPublica(FONDO_404)}"), radial-gradient(ellipse at 40% 
 
 function PaginaNoEncontrada() {
     useTituloPagina("Página no encontrada");
+    // Guiño: haberse perdido
+    useEffect(() => descubrirGuino("desvio"), []);
 
     return (
         <section className="relative isolate overflow-hidden">
