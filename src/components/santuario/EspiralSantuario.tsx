@@ -1,3 +1,5 @@
+import { brazoEspiral } from "../../utils/espiral";
+
 // Espiral de dos brazos, púrpura y dorado, como la que sale de las plantas de Pedalina
 // en el capítulo 7 de «Barefoot Café». Gira despacio (salvo con «reducir movimiento»).
 // Quien la use debe posicionarla (relative, absolute…): sus capas van superpuestas.
@@ -5,19 +7,8 @@
 const VUELTAS = 3.5;
 const RADIO = 96;
 
-// Espiral de Arquímedes (el radio crece al girar), desplazada medio giro para el segundo brazo.
-function brazo(desfase: number) {
-    const puntos: string[] = [];
-    const angulo = VUELTAS * 2 * Math.PI;
-    for (let t = 0; t <= angulo; t += 0.08) {
-        const r = (RADIO * t) / angulo;
-        puntos.push(`${(r * Math.cos(t + desfase)).toFixed(1)} ${(r * Math.sin(t + desfase)).toFixed(1)}`);
-    }
-    return `M${puntos.join(" L")}`;
-}
-
-const BRAZO_DORADO = brazo(0);
-const BRAZO_PURPURA = brazo(Math.PI);
+const BRAZO_DORADO = brazoEspiral(RADIO, VUELTAS);
+const BRAZO_PURPURA = brazoEspiral(RADIO, VUELTAS, Math.PI);
 
 function EspiralSantuario({ className = "" }: { className?: string }) {
     return (

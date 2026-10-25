@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import AvisoEdad from "../components/layout/AvisoEdad";
 import TituloAusente from "../components/layout/TituloAusente";
 import EspiralSantuario from "../components/santuario/EspiralSantuario";
-import PlantaContando from "../components/santuario/PlantaContando";
+import PlantasPedalina from "../components/santuario/PlantasPedalina";
 import RastroHuellas from "../components/santuario/RastroHuellas";
 import Susurros from "../components/santuario/Susurros";
 import Umbral from "../components/santuario/Umbral";
@@ -71,10 +71,11 @@ function Trance({ alDespertar }: { alDespertar: () => void }) {
 
     return (
         <div className="flex max-w-xl flex-col items-center gap-8 text-center">
-            <div className="relative grid place-items-center">
+            {/* Las plantas (y su halo) surgen poco a poco al empezar el trance */}
+            <div className="relative grid place-items-center motion-safe:animate-[surgir_5s_cubic-bezier(0.5,0,0.3,1)_both]">
                 {/* Un halo que crece y mengua, al ritmo de la respiración */}
                 <div className="absolute size-40 rounded-full bg-[#edc577]/20 blur-2xl motion-safe:animate-latir sm:size-52" />
-                <PlantaContando encendidos={Math.min(paso, cuenta.dedos.length)} className="relative h-40 sm:h-52" />
+                <PlantasPedalina encendidos={Math.min(paso, cuenta.dedos.length)} className="relative w-52 sm:w-72" />
             </div>
 
             <p
@@ -182,11 +183,15 @@ function PaginaSantuario() {
                 poco a poco, para que no haya corte. */}
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,#2a1a10_0%,#0b0705_70%)] motion-safe:animate-[oscurecer_2.5s_ease-out_both]" />
             {conEspiral && (
-                <EspiralSantuario
-                    className={`absolute left-1/2 top-1/2 -z-10 w-[min(110vmin,820px)] -translate-x-1/2 -translate-y-1/2 transition-opacity duration-[3000ms] ${
-                        fase === "trance" ? "opacity-40" : "opacity-25"
-                    }`}
-                />
+                // La envoltura hace que la espiral surja poco a poco al aparecer; dentro, la opacidad
+                // cambia suavemente entre la bienvenida y el trance
+                <div className="absolute left-1/2 top-1/2 -z-10 -translate-x-1/2 -translate-y-1/2 motion-safe:animate-surgir">
+                    <EspiralSantuario
+                        className={`relative w-[min(110vmin,820px)] transition-opacity duration-[3000ms] ${
+                            fase === "trance" ? "opacity-40" : "opacity-25"
+                        }`}
+                    />
+                </div>
             )}
 
             {conEspiral && <Susurros />}
