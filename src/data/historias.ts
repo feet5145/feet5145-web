@@ -4,7 +4,7 @@ export type Linea = "principal" | "alternativa" | "independiente";
 export const lineas: { id: Linea; titulo: string; descripcion: string }[] = [
     {
         id: "principal",
-        titulo: "Línea principal",
+        titulo: "La descalza linea temporal",
         descripcion: "Historias conectadas entre sí, de la más reciente a la más antigua.",
     },
     {
