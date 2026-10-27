@@ -7,6 +7,11 @@ export type Novedad = {
 
 export const novedades: Novedad[] = [
     {
+        fecha: "2026-10-27",
+        titulo: "Capítulo 8 de «Barefoot Café» publicado",
+        texto: "Ya está disponible en Inkitt y Wattpad el capítulo 8 de «Barefoot Café». Quitaos los zapatos, sentaos… y dejad que el café haga el resto.",
+    },
+    {
         fecha: "2026-10-25",
         titulo: "Capítulo 7 de «Barefoot Café» publicado",
         texto: "Ya podéis leer en Inkitt y Wattpad el capítulo 7 de «Barefoot Café». Poneos cómodos, respirad hondo… y no apartéis la mirada.",
