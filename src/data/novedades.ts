@@ -7,6 +7,11 @@ export type Novedad = {
 
 export const novedades: Novedad[] = [
     {
+        fecha: "2026-11-01",
+        titulo: "«Castigo de pies parte 2» ya está aquí",
+        texto: "Ya podéis leer en Inkitt y Wattpad el primer capítulo de «Castigo de pies parte 2». Marina aprendió la lección, pero el mundo no olvida tan fácilmente, así que ha decidido volver a llamar a una Diosa. Y ya sabéis que Pedalina no regala nada…",
+    },
+    {
         fecha: "2026-10-29",
         titulo: "«Barefoot Café» llega a su fin",
         texto: "Ya está disponible en Inkitt y Wattpad el epílogo de «Barefoot Café», que pone el punto final a la historia. Gracias a todos los que habéis dejado los zapatos en la entrada y os habéis quedado hasta el último sorbo. Las puertas del café no se cierran del todo… nunca se sabe quién volverá a este lugar.",

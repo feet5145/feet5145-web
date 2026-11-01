@@ -120,6 +120,15 @@ export const personajes: Personaje[] = [
                     "**[[Tomás]]:** Lo libera de su miedo y lo acoge en su café para siempre.",
                 ],
             },
+            {
+                historia: "castigo-de-pies-parte-2",
+                rol: [
+                    "Meses después de liberar a Marina, acude a su llamada junto al lago. Le dice que no puede hacer exactamente lo que le pide, pero que puede ayudarla de otra forma… a cambio de algo.",
+                ],
+                relaciones: [
+                    "**[[Marina]]:** La chica a la que castigó. Esta vez es ella quien la llama.",
+                ],
+            },
         ],
     },
     {
@@ -236,6 +245,16 @@ export const personajes: Personaje[] = [
                     "Clara lo descubre y la humilla delante de sus amigas, que la graban y se aprovechan de ella durante días. Cuando de verdad se arrepiente, Pedalina la libera con una condición: no volver a burlarse de los pies ni de los fetichistas.",
                 ],
             },
+            {
+                historia: "castigo-de-pies-parte-2",
+                rol: [
+                    "Meses después de ser liberada, los vídeos de aquella noche siguen circulando y nadie la deja en paz. Tras derrumbarse, y animada por Clara, vuelve descalza al lago donde conoció a Pedalina para suplicarle que la gente lo olvide.",
+                ],
+                relaciones: [
+                    "**[[Clara]]:** Su mejor amiga, que no se separa de ella.",
+                    "**[[Pedalina]]:** La Diosa que la castigó y a la que ahora pide ayuda.",
+                ],
+            },
         ],
     },
     {
@@ -288,6 +307,15 @@ export const personajes: Personaje[] = [
                     "Tras días de abusos, la culpa puede más: le pide perdón a Marina, que la perdona y le cuenta lo de Pedalina.",
                 ],
             },
+            {
+                historia: "castigo-de-pies-parte-2",
+                rol: [
+                    "Convertida en el apoyo incondicional de Marina, carga con la culpa de lo que hizo. Es quien le propone hablar con Pedalina y le aconseja ir a buscarla descalza.",
+                ],
+                relaciones: [
+                    "**[[Marina]]:** Su mejor amiga, a la que intenta hacer feliz de cualquier manera.",
+                ],
+            },
         ],
     },
     {
@@ -297,7 +325,7 @@ export const personajes: Personaje[] = [
         resumen:
             "Un universitario tímido y reprimido que descubre el Barefoot Café y empieza a explorar deseos que tenía guardados. Allí encuentra por fin su lugar: lejos del ruido, con Lucía y bajo la mirada de Pedalina.",
         foto: "/personajes/Tomás.webp",
-        historias: ["barefoot-cafe"],
+        historias: ["barefoot-cafe", "castigo-de-pies-parte-2"],
         datosBasicos: [
             { etiqueta: "Edad estimada", valor: "21" },
             { etiqueta: "Altura", valor: "Alto" },
@@ -311,10 +339,7 @@ export const personajes: Personaje[] = [
         personalidad: [
             "Muy tímido, inseguro y reprimido. Curioso. Tiene un fuerte conflicto interno entre el deseo y la vergüenza. Es sincero y un poco torpe emocionalmente, pero capaz de ser valiente cuando se decide.",
             "Tras la hipnosis de Pedalina, su timidez no desaparece: solo se queda dormida. Ya no le hace caso al miedo ni al «qué dirán», y por primera vez en mucho tiempo se siente feliz.",
-        ],
-        rol: [
-            "Protagonista. Universitario que descubre el Barefoot Café y empieza a explorar deseos que tenía reprimidos.",
-            "Su dedicación llama la atención de Pedalina, que lo recibe en su santuario. Allí le cuenta su historia y le pide que le quite la timidez.",
+            "Sus padres, muy estrictos, le hicieron sentir siempre que nada de lo que hacía era suficiente. De ahí su culpa y su miedo a mostrar lo que desea.",
         ],
         relaciones: [
             "**[[lucia|Lucía]]:** Su camarera favorita, porque con ella puede bajar la guardia. Primero su novia temporal y después su novia de verdad: se va a vivir con ella.",
@@ -322,11 +347,22 @@ export const personajes: Personaje[] = [
             "**[[Carmen]]:** Le retiró los pies cuando iba a lamerlos. Al final le pide perdón, y él no le guarda rencor.",
             "**[[Pedalina]]:** Su Diosa. Lo hipnotiza para liberarlo de su miedo y le pide que vaya a visitarla de vez en cuando.",
         ],
-        notas: [
-            "Sus padres, muy estrictos, le hicieron sentir siempre que nada de lo que hacía era suficiente. De ahí su culpa y su miedo a mostrar lo que desea.",
-            "Besa el pie de Lucía, le da un masaje y un beso a Maya y se lleva el rechazo de Carmen. Ese mismo día le pide a Lucía que sea su novia temporal.",
-            "Pedalina lo hipnotiza: su timidez se queda dormida y se entrega a ella.",
-            "Se va a vivir con Lucía y pasa a ser el cliente VIP del café: todo gratis, cortesía de Pedalina.",
+        porHistoria: [
+            {
+                historia: "barefoot-cafe",
+                rol: [
+                    "Protagonista. Universitario que descubre el Barefoot Café y empieza a explorar deseos que tenía reprimidos.",
+                    "Besa el pie de Lucía, le da un masaje y un beso a Maya y se lleva el rechazo de Carmen. Ese mismo día le pide a Lucía que sea su novia temporal.",
+                    "Su dedicación llama la atención de Pedalina, que lo recibe en su santuario. Allí le cuenta su historia y le pide que le quite la timidez. Ella lo hipnotiza: su timidez se queda dormida y se entrega a ella.",
+                    "Se va a vivir con Lucía y pasa a ser el cliente VIP del café: todo gratis, cortesía de Pedalina.",
+                ],
+            },
+            {
+                historia: "castigo-de-pies-parte-2",
+                rol: [
+                    "Aparición breve: estudia en una mesa del Barefoot Café, con su café y su trozo de pastel, tan absorto que ni se da cuenta de que ha llegado Pedalina.",
+                ],
+            },
         ],
     },
     {
@@ -360,6 +396,16 @@ export const personajes: Personaje[] = [
                 rol: [
                     "Camarera principal. Fue la primera en atender a [[Tomás]] y quien le abrió la puerta al mundo del café. Suele ser la más protectora con los clientes nuevos y tímidos.",
                     "Consuela a Tomás tras el rechazo de Carmen, acepta ser su novia temporal y deciden ver si lo suyo funciona de verdad. Al final se van a vivir juntos.",
+                ],
+            },
+            {
+                historia: "castigo-de-pies-parte-2",
+                rol: [
+                    "Sigue trabajando descalza en el Barefoot Café, con una avalancha de exámenes encima y Tomás a su lado. Con su amabilidad, se convierte en un pequeño oasis para Marina.",
+                ],
+                relaciones: [
+                    "**[[Marina]]:** La trata con dulzura desde el primer momento.",
+                    "**[[Tomás]]:** Su novio.",
                 ],
             },
         ],

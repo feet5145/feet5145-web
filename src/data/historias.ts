@@ -67,7 +67,7 @@ export const historias: Historia[] = [
         etiquetas: ["Redención", "Magia"],
         portada: "/portadas/castigo-de-pies-parte-2.webp",
         linea: "principal",
-        publicada: false,
+        enlace: "https://www.inkitt.com/stories/1936325",
     },
     {
         id: "barefoot-cafe",
