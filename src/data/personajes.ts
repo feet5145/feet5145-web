@@ -77,7 +77,7 @@ export const personajes: Personaje[] = [
             {
                 historia: "la-diosa-de-los-pies",
                 rol: [
-                    "Tenía a Nicolás asignado como súbdito y, tras años comprobando su lealtad a través de Naiara, el ángel de la guarda que creó para él, decide recompensarlo: lo lleva a su paraíso y lo ayuda a convertir una fiesta de pijamas en una fiesta de pies.",
+                    "Tenía a Nicolás asignado como súbdito y, tras años comprobando su lealtad a través de Naiara, el ángel de la guarda que creó para él, decide recompensarlo: lo lleva a su paraíso y se une a la fiesta de pies que Naiara ha montado para él.",
                     "Al final Nicolás le entrega su cuerpo y su alma. Ella le deja visitar su paraíso siempre que quiera y hace que Naiara pueda quedarse en la Tierra con él.",
                 ],
                 relaciones: [
@@ -1017,7 +1017,7 @@ export const personajes: Personaje[] = [
         ],
         rol: [
             "Una compañera difundió en la universidad la conversación en la que le confió su fetiche. Pedalina, que lo tenía asignado como súbdito, decide recompensar su lealtad.",
-            "Con la ayuda de Naiara y Pedalina, convierte una fiesta de pijamas en una fiesta de pies y hace que Mariluz cumpla la promesa que le hizo.",
+            "Fusionado con Naiara bajo la apariencia de Idaira, se cuela en una fiesta de pijamas que ella convierte en una fiesta de pies. Después, con la ayuda de Pedalina, hace que Mariluz cumpla la promesa que le hizo.",
         ],
         relaciones: [
             "**[[Naiara]]:** Su ángel de la guarda y, después, su novia.",
@@ -1053,7 +1053,7 @@ export const personajes: Personaje[] = [
             "Dulce, traviesa y muy protectora con Nicolás. Lo calma con un abrazo o un beso en la mejilla, y no tiene miedo de lanzarse cuando algo le importa.",
         ],
         rol: [
-            "Pedalina la creó para ser el ángel de la guarda de Nicolás. Tras años comprobando su lealtad, se le presenta y lo lleva al país de los Dioses.",
+            "Pedalina la creó para ser el ángel de la guarda de Nicolás. Tras años comprobando su lealtad, se le presenta y lo lleva al país de los Dioses. Es quien propone colarse en una fiesta de pijamas para convertirla en una fiesta de pies, fusionada con él bajo la apariencia de Idaira.",
             "Puede abrir portales, fusionarse con Nicolás, copiar la personalidad de otra persona y teletransportarse.",
         ],
         relaciones: [
