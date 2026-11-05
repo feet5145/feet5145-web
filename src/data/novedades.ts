@@ -7,6 +7,11 @@ export type Novedad = {
 
 export const novedades: Novedad[] = [
     {
+        fecha: "2026-11-05",
+        titulo: "Capítulo 3 de «Castigo de pies parte 2» publicado",
+        texto: "Ya podéis leer en Inkitt y Wattpad el capítulo 3 de «Castigo de pies parte 2». Los tratos con una Diosa se cumplen, y Marina va a descubrir lo que cuesta el suyo.",
+    },
+    {
         fecha: "2026-11-02",
         titulo: "Capítulo 2 de «Castigo de pies parte 2» publicado",
         texto: "Ya podéis leer en Inkitt y Wattpad el capítulo 2 de «Castigo de pies parte 2». Marina ha pedido audiencia con una Diosa, y ella está dispuesta a escuchar, mas no a regalar.",
