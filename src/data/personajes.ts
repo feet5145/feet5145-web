@@ -124,9 +124,11 @@ export const personajes: Personaje[] = [
                 historia: "castigo-de-pies-parte-2",
                 rol: [
                     "Meses después de liberar a Marina, acude a su llamada junto al lago. Le dice que no puede hacer exactamente lo que le pide, pero que puede ayudarla de otra forma… a cambio de algo.",
+                    "El trato: Marina trabajará descalza en el Barefoot Café mientras sus empleados preparan los exámenes, y abrazará el fetiche de pies por voluntad propia. Cuando cumple, Pedalina borra los vídeos de todas partes y cumple también el deseo que Marina añadió: ser su amiga.",
                 ],
                 relaciones: [
-                    "**[[Marina]]:** La chica a la que castigó. Esta vez es ella quien la llama.",
+                    "**[[Marina]]:** La chica a la que castigó. Esta vez es ella quien la llama, y acaban siendo amigas.",
+                    "**[[Clara]]:** La amiga de Marina, que le rezaba descalza. Al final la conoce en persona.",
                 ],
             },
         ],
@@ -249,10 +251,12 @@ export const personajes: Personaje[] = [
                 historia: "castigo-de-pies-parte-2",
                 rol: [
                     "Meses después de ser liberada, los vídeos de aquella noche siguen circulando y nadie la deja en paz. Tras derrumbarse, y animada por Clara, vuelve descalza al lago donde conoció a Pedalina para suplicarle que la gente lo olvide.",
+                    "Acepta trabajar descalza en el Barefoot Café, donde pasa de ser la hipnotizada a ser la adorada. Poco a poco, la incomodidad deja paso a algo que no esperaba: disfrutarlo. Cuando cumple su parte, los vídeos desaparecen, y vuelve a la universidad con la cabeza alta.",
                 ],
                 relaciones: [
                     "**[[Clara]]:** Su mejor amiga, que no se separa de ella.",
-                    "**[[Pedalina]]:** La Diosa que la castigó y a la que ahora pide ayuda.",
+                    "**[[Pedalina]]:** La Diosa que la castigó, a la que ahora pide ayuda y que acaba siendo su amiga.",
+                    "**[[lucia|Lucía]]:** La camarera que la acompaña en su primer día en el café.",
                 ],
             },
         ],
@@ -311,9 +315,11 @@ export const personajes: Personaje[] = [
                 historia: "castigo-de-pies-parte-2",
                 rol: [
                     "Convertida en el apoyo incondicional de Marina, carga con la culpa de lo que hizo. Es quien le propone hablar con Pedalina y le aconseja ir a buscarla descalza.",
+                    "Ayuda a Marina a practicar antes de su primer día en el café, y reza descalza a Pedalina para que todo le vaya bien. Al final, Marina se la presenta.",
                 ],
                 relaciones: [
                     "**[[Marina]]:** Su mejor amiga, a la que intenta hacer feliz de cualquier manera.",
+                    "**[[Pedalina]]:** La Diosa a la que reza, y que acaba conociendo en casa de Marina.",
                 ],
             },
         ],
@@ -402,6 +408,7 @@ export const personajes: Personaje[] = [
                 historia: "castigo-de-pies-parte-2",
                 rol: [
                     "Sigue trabajando descalza en el Barefoot Café, con una avalancha de exámenes encima y Tomás a su lado. Con su amabilidad, se convierte en un pequeño oasis para Marina.",
+                    "Acompaña a Marina en su primer día como camarera, la ayuda con las ofertas especiales y le deja el café a su cargo para poder estudiar.",
                 ],
                 relaciones: [
                     "**[[Marina]]:** La trata con dulzura desde el primer momento.",
