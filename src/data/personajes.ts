@@ -201,7 +201,7 @@ export const personajes: Personaje[] = [
         nombre: "Marina",
         epiteto: "Una chica común muy subidita",
         resumen:
-            "Arrogante y burlona hasta que un hechizo le dio la vuelta a su vida. Entre la vergüenza y una curiosidad que le cuesta admitir, empieza a descubrir lo que se siente al ser adorada.",
+            "Arrogante y burlona hasta que un hechizo le dio la vuelta a su vida. Entre la vergüenza y una curiosidad que le costaba admitir, descubrió lo que se siente al ser adorada. Con el tiempo ha cambiado de verdad: cumplió su trato con Pedalina, volvió a la universidad con la cabeza alta y acabó siendo amiga de la Diosa.",
         foto: "/personajes/Marina.webp",
         historias: ["castigo-de-pies", "castigo-de-pies-parte-2"],
         destacado: true,
@@ -266,7 +266,7 @@ export const personajes: Personaje[] = [
         nombre: "Clara",
         epiteto: "La mejor amiga de Marina",
         resumen:
-            "Inteligente, observadora y con un humor afilado. Cuando descubrió el hechizo no dudó en aprovecharlo, pero no es cruel de corazón: ahora carga con la culpa y trata de reparar el daño.",
+            "Inteligente, observadora y con un humor afilado. Cuando descubrió el hechizo no dudó en aprovecharlo, pero no era cruel de corazón, y la culpa la hizo cambiar: acompañó a Marina en su redención, aprendió a rezarle descalza a Pedalina y acabó conociéndola en persona.",
         foto: "/personajes/Clara.webp",
         historias: ["castigo-de-pies", "castigo-de-pies-parte-2"],
         datosBasicos: [
