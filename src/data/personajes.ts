@@ -585,10 +585,15 @@ export const personajes: Personaje[] = [
                 valor: "Es el Dios del tiempo. ¿Qué más rasgos destacados quieres? XD Bueno, por si acaso: un halo dorado tras la cabeza, un collar con números romanos como la esfera de un reloj, unas enormes alas oscuras y una guadaña dorada.",
             },
         ],
-        personalidad: [],
+        personalidad: [
+            "Formal y de voz templada. Trata a [[El que elige]] con un respeto ceremonioso («con el debido respeto, venerable seleccionador»), aunque en el fondo lo considera un igual y un amigo.",
+            "Entregado a su labor por encima de todo: que el tiempo fluya, con o sin humanos. Sabe mejor que nadie lo que pasa cuando alguien se cree más fuerte que el universo, y por eso habla de las líneas temporales con un respeto que roza el miedo.",
+            "Sabio y prudente. Desconfía de los humanos, que una y otra vez dejan que el poder se les suba a la cabeza. Aun así, aconseja sin imponer: «No seré yo quien tome una decisión por ti».",
+            "Solitario por naturaleza, aunque agradece la compañía de cuando en cuando. Tiene una curiosidad tranquila y cierta ironía sobre sí mismo: es el encargado del tiempo y, aun así, no puede saber qué hubo antes.",
+        ],
         rol: ["Dios del tiempo"],
         relaciones: [
-            "**[[El que elige]]:** Ni siquiera Chronos es capaz de explicar qué había antes del tiempo, cuando El que elige ya existía.",
+            "**[[El que elige]]:** Nacieron a la vez, tan viejos como el tiempo mismo. Él gestiona lo que existe; Chronos, cuándo sucede. Ninguno sabe qué había antes, porque sin tiempo no existe un «antes». Operan por separado para mantener el equilibrio, y se respetan como iguales.",
         ],
         notas: [
             "Es el único Dios que opera de manera independiente: controla el tiempo, y NADA ni NADIE se atreve a manipularlo.",
