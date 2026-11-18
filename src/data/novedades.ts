@@ -7,6 +7,11 @@ export type Novedad = {
 
 export const novedades: Novedad[] = [
     {
+        fecha: "2026-11-18",
+        titulo: "Castigo de pies parte 1 eliminada de wattpad",
+        texto: "Como se ve que en wattpad no tienen otra cosa mejor que hacer, me han borrado 'Castigo de pies parte 1', voy a ver si la recupero.",
+    },
+    {
         fecha: "2026-11-12",
         titulo: "«Castigo de pies parte 2» llega a su fin",
         texto: "Ya podéis leer en Inkitt y Wattpad el último capítulo de «Castigo de pies parte 2». Marina ha cumplido su parte del trato, y ahora le toca a una Diosa cumplir la suya. Gracias a todos los que la habéis acompañado hasta el final.",
